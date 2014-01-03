@@ -3,5 +3,5 @@ layout: post-index
 permalink: /articles/
 title: Articles
 tagline: A List of Posts
-tags: [blog, graphic design]
+tags: [articles, technology, software engineering, computer science, functional programming]
 ---

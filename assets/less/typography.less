@@ -1,6 +1,12 @@
 // Body
 // --------------------------------------------------
 body {
+//  -webkit-font-smoothing: antialiased; 
+//  -webkit-text-shadow: rgba(255,255,255,0.01) 0 0 1px;
+//  -webkit-text-stroke: rgba(255,255,255,0.01) 0.1px;
+  
+  text-rendering: optimizeLegibility;
+  font-weight: normal;
 	font-family: @base-font;
 	color: @text-color;
 }
@@ -75,6 +81,36 @@ figcaption {
 		color: lighten(@text-color, 30);
 	}
 }
+.site-name {
+  .font-size(26);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+.site-name em {
+  color: lighten(@link-color, 50); 
+  font-style: normal;
+}
+.site-name strong {
+  font-weight: 900;
+}
+.site-name a {
+  color: darken(@text-color, 20);
+}
+nav a {
+  color: lighten(@link-color, 20); 
+  font-weight: 300;
+}
+
+.article-author-side h3 {
+  .font-size(20);
+}
+
+a.comment-count {
+  .font-size(10);
+  color: lighten(@link-color, 20); 
+  font-weight: 300;
+  float: right;
+}
 
 // Note text
 // --------------------------------------------------
@@ -92,7 +128,8 @@ figcaption {
 // --------------------------------------------------
 blockquote {
 	margin-left: -28px;
-	padding-left: 20px;
+	padding-left: 33px;
+	padding-right: 5px;
 	border-left: 8px solid @border-color;
 	font-family: @alt-font;
 	font-style: italic;
@@ -111,12 +148,32 @@ blockquote {
 // Paragraphs
 // --------------------------------------------------
 p {
-	margin: 0 0 @indent-var;
-	& + p {
-		//siblings indentation
-		text-indent: @indent-var;
-		margin-top: -(@indent-var);
-	}
+ margin: 0;
+}
+
+// Spacing Between Block Elements
+// --------------------------------------------------
+address + address,address + article,address + aside,address + audio,address + blockquote,address + canvas,address + dd,address + div,address + dl,address + fieldset,address + figcaption,address + figure,address + footer,address + form,address + header,address + hgroup,address + noscript,address + ol,address + output,address + p,address + pre,address + section,address + table,address + tfoot,address + ul,address + video,article + address,article + article,article + aside,article + audio,article + blockquote,article + canvas,article + dd,article + div,article + dl,article + fieldset,article + figcaption,article + figure,article + footer,article + form,article + header,article + hgroup,article + noscript,article + ol,article + output,article + p,article + pre,article + section,article + table,article + tfoot,article + ul,article + video,aside + address,aside + article,aside + aside,aside + audio,aside + blockquote,aside + canvas,aside + dd,aside + div,aside + dl,aside + fieldset,aside + figcaption,aside + figure,aside + footer,aside + form,aside + header,aside + hgroup,aside + noscript,aside + ol,aside + output,aside + p,aside + pre,aside + section,aside + table,aside + tfoot,aside + ul,aside + video,audio + address,audio + article,audio + aside,audio + audio,audio + blockquote,audio + canvas,audio + dd,audio + div,audio + dl,audio + fieldset,audio + figcaption,audio + figure,audio + footer,audio + form,audio + header,audio + hgroup,audio + noscript,audio + ol,audio + output,audio + p,audio + pre,audio + section,audio + table,audio + tfoot,audio + ul,audio + video,blockquote + address,blockquote + article,blockquote + aside,blockquote + audio,blockquote + blockquote,blockquote + canvas,blockquote + dd,blockquote + div,blockquote + dl,blockquote + fieldset,blockquote + figcaption,blockquote + figure,blockquote + footer,blockquote + form,blockquote + header,blockquote + hgroup,blockquote + noscript,blockquote + ol,blockquote + output,blockquote + p,blockquote + pre,blockquote + section,blockquote + table,blockquote + tfoot,blockquote + ul,blockquote + video,canvas + address,canvas + article,canvas + aside,canvas + audio,canvas + blockquote,canvas + canvas,canvas + dd,canvas + div,canvas + dl,canvas + fieldset,canvas + figcaption,canvas + figure,canvas + footer,canvas + form,canvas + header,canvas + hgroup,canvas + noscript,canvas + ol,canvas + output,canvas + p,canvas + pre,canvas + section,canvas + table,canvas + tfoot,canvas + ul,canvas + video,dd + address,dd + article,dd + aside,dd + audio,dd + blockquote,dd + canvas,dd + dd,dd + div,dd + dl,dd + fieldset,dd + figcaption,dd + figure,dd + footer,dd + form,dd + header,dd + hgroup,dd + noscript,dd + ol,dd + output,dd + p,dd + pre,dd + section,dd + table,dd + tfoot,dd + ul,dd + video,div + address,div + article,div + aside,div + audio,div + blockquote,div + canvas,div + dd,div + div,div + dl,div + fieldset,div + figcaption,div + figure,div + footer,div + form,div + header,div + hgroup,div + noscript,div + ol,div + output,div + p,div + pre,div + section,div + table,div + tfoot,div + ul,div + video,dl + address,dl + article,dl + aside,dl + audio,dl + blockquote,dl + canvas,dl + dd,dl + div,dl + dl,dl + fieldset,dl + figcaption,dl + figure,dl + footer,dl + form,dl + header,dl + hgroup,dl + noscript,dl + ol,dl + output,dl + p,dl + pre,dl + section,dl + table,dl + tfoot,dl + ul,dl + video,fieldset + address,fieldset + article,fieldset + aside,fieldset + audio,fieldset + blockquote,fieldset + canvas,fieldset + dd,fieldset + div,fieldset + dl,fieldset + fieldset,fieldset + figcaption,fieldset + figure,fieldset + footer,fieldset + form,fieldset + header,fieldset + hgroup,fieldset + noscript,fieldset + ol,fieldset + output,fieldset + p,fieldset + pre,fieldset + section,fieldset + table,fieldset + tfoot,fieldset + ul,fieldset + video,figcaption + address,figcaption + article,figcaption + aside,figcaption + audio,figcaption + blockquote,figcaption + canvas,figcaption + dd,figcaption + div,figcaption + dl,figcaption + fieldset,figcaption + figcaption,figcaption + figure,figcaption + footer,figcaption + form,figcaption + header,figcaption + hgroup,figcaption + noscript,figcaption + ol,figcaption + output,figcaption + p,figcaption + pre,figcaption + section,figcaption + table,figcaption + tfoot,figcaption + ul,figcaption + video,figure + address,figure + article,figure + aside,figure + audio,figure + blockquote,figure + canvas,figure + dd,figure + div,figure + dl,figure + fieldset,figure + figcaption,figure + figure,figure + footer,figure + form,figure + header,figure + hgroup,figure + noscript,figure + ol,figure + output,figure + p,figure + pre,figure + section,figure + table,figure + tfoot,figure + ul,figure + video,footer + address,footer + article,footer + aside,footer + audio,footer + blockquote,footer + canvas,footer + dd,footer + div,footer + dl,footer + fieldset,footer + figcaption,footer + figure,footer + footer,footer + form,footer + header,footer + hgroup,footer + noscript,footer + ol,footer + output,footer + p,footer + pre,footer + section,footer + table,footer + tfoot,footer + ul,footer + video,form + address,form + article,form + aside,form + audio,form + blockquote,form + canvas,form + dd,form + div,form + dl,form + fieldset,form + figcaption,form + figure,form + footer,form + form,form + header,form + hgroup,form + noscript,form + ol,form + output,form + p,form + pre,form + section,form + table,form + tfoot,form + ul,form + video,header + address,header + article,header + aside,header + audio,header + blockquote,header + canvas,header + dd,header + div,header + dl,header + fieldset,header + figcaption,header + figure,header + footer,header + form,header + header,header + hgroup,header + noscript,header + ol,header + output,header + p,header + pre,header + section,header + table,header + tfoot,header + ul,header + video,hgroup + address,hgroup + article,hgroup + aside,hgroup + audio,hgroup + blockquote,hgroup + canvas,hgroup + dd,hgroup + div,hgroup + dl,hgroup + fieldset,hgroup + figcaption,hgroup + figure,hgroup + footer,hgroup + form,hgroup + header,hgroup + hgroup,hgroup + noscript,hgroup + ol,hgroup + output,hgroup + p,hgroup + pre,hgroup + section,hgroup + table,hgroup + tfoot,hgroup + ul,hgroup + video,noscript + address,noscript + article,noscript + aside,noscript + audio,noscript + blockquote,noscript + canvas,noscript + dd,noscript + div,noscript + dl,noscript + fieldset,noscript + figcaption,noscript + figure,noscript + footer,noscript + form,noscript + header,noscript + hgroup,noscript + noscript,noscript + ol,noscript + output,noscript + p,noscript + pre,noscript + section,noscript + table,noscript + tfoot,noscript + ul,noscript + video,ol + address,ol + article,ol + aside,ol + audio,ol + blockquote,ol + canvas,ol + dd,ol + div,ol + dl,ol + fieldset,ol + figcaption,ol + figure,ol + footer,ol + form,ol + header,ol + hgroup,ol + noscript,ol + ol,ol + output,ol + p,ol + pre,ol + section,ol + table,ol + tfoot,ol + ul,ol + video,output + address,output + article,output + aside,output + audio,output + blockquote,output + canvas,output + dd,output + div,output + dl,output + fieldset,output + figcaption,output + figure,output + footer,output + form,output + header,output + hgroup,output + noscript,output + ol,output + output,output + p,output + pre,output + section,output + table,output + tfoot,output + ul,output + video,p + address,p + article,p + aside,p + audio,p + blockquote,p + canvas,p + dd,p + div,p + dl,p + fieldset,p + figcaption,p + figure,p + footer,p + form,p + header,p + hgroup,p + noscript,p + ol,p + output,p + p,p + pre,p + section,p + table,p + tfoot,p + ul,p + video,pre + address,pre + article,pre + aside,pre + audio,pre + blockquote,pre + canvas,pre + dd,pre + div,pre + dl,pre + fieldset,pre + figcaption,pre + figure,pre + footer,pre + form,pre + header,pre + hgroup,pre + noscript,pre + ol,pre + output,pre + p,pre + pre,pre + section,pre + table,pre + tfoot,pre + ul,pre + video,section + address,section + article,section + aside,section + audio,section + blockquote,section + canvas,section + dd,section + div,section + dl,section + fieldset,section + figcaption,section + figure,section + footer,section + form,section + header,section + hgroup,section + noscript,section + ol,section + output,section + p,section + pre,section + section,section + table,section + tfoot,section + ul,section + video,table + address,table + article,table + aside,table + audio,table + blockquote,table + canvas,table + dd,table + div,table + dl,table + fieldset,table + figcaption,table + figure,table + footer,table + form,table + header,table + hgroup,table + noscript,table + ol,table + output,table + p,table + pre,table + section,table + table,table + tfoot,table + ul,table + video,tfoot + address,tfoot + article,tfoot + aside,tfoot + audio,tfoot + blockquote,tfoot + canvas,tfoot + dd,tfoot + div,tfoot + dl,tfoot + fieldset,tfoot + figcaption,tfoot + figure,tfoot + footer,tfoot + form,tfoot + header,tfoot + hgroup,tfoot + noscript,tfoot + ol,tfoot + output,tfoot + p,tfoot + pre,tfoot + section,tfoot + table,tfoot + tfoot,tfoot + ul,tfoot + video,ul + address,ul + article,ul + aside,ul + audio,ul + blockquote,ul + canvas,ul + dd,ul + div,ul + dl,ul + fieldset,ul + figcaption,ul + figure,ul + footer,ul + form,ul + header,ul + hgroup,ul + noscript,ul + ol,ul + output,ul + p,ul + pre,ul + section,ul + table,ul + tfoot,ul + ul,ul + video,video + address,video + article,video + aside,video + audio,video + blockquote,video + canvas,video + dd,video + div,video + dl,video + fieldset,video + figcaption,video + figure,video + footer,video + form,video + header,video + hgroup,video + noscript,video + ol,video + output,video + p,video + pre,video + section,video + table,video + tfoot,video + ul,video + video {
+  margin-top: @indent-var;
+}
+
+// Spacing Prior to a Header
+// --------------------------------------------------
+address + h1,address + h2,address + h3,address + h4,address + h5,address + h6,address + hr,article + h1,article + h2,article + h3,article + h4,article + h5,article + h6,article + hr,aside + h1,aside + h2,aside + h3,aside + h4,aside + h5,aside + h6,aside + hr,audio + h1,audio + h2,audio + h3,audio + h4,audio + h5,audio + h6,audio + hr,blockquote + h1,blockquote + h2,blockquote + h3,blockquote + h4,blockquote + h5,blockquote + h6,blockquote + hr,canvas + h1,canvas + h2,canvas + h3,canvas + h4,canvas + h5,canvas + h6,canvas + hr,dd + h1,dd + h2,dd + h3,dd + h4,dd + h5,dd + h6,dd + hr,div + h1,div + h2,div + h3,div + h4,div + h5,div + h6,div + hr,dl + h1,dl + h2,dl + h3,dl + h4,dl + h5,dl + h6,dl + hr,fieldset + h1,fieldset + h2,fieldset + h3,fieldset + h4,fieldset + h5,fieldset + h6,fieldset + hr,figcaption + h1,figcaption + h2,figcaption + h3,figcaption + h4,figcaption + h5,figcaption + h6,figcaption + hr,figure + h1,figure + h2,figure + h3,figure + h4,figure + h5,figure + h6,figure + hr,footer + h1,footer + h2,footer + h3,footer + h4,footer + h5,footer + h6,footer + hr,form + h1,form + h2,form + h3,form + h4,form + h5,form + h6,form + hr,header + h1,header + h2,header + h3,header + h4,header + h5,header + h6,header + hr,hgroup + h1,hgroup + h2,hgroup + h3,hgroup + h4,hgroup + h5,hgroup + h6,hgroup + hr,noscript + h1,noscript + h2,noscript + h3,noscript + h4,noscript + h5,noscript + h6,noscript + hr,ol + h1,ol + h2,ol + h3,ol + h4,ol + h5,ol + h6,ol + hr,output + h1,output + h2,output + h3,output + h4,output + h5,output + h6,output + hr,p + h1,p + h2,p + h3,p + h4,p + h5,p + h6,p + hr,pre + h1,pre + h2,pre + h3,pre + h4,pre + h5,pre + h6,pre + hr,section + h1,section + h2,section + h3,section + h4,section + h5,section + h6,section + hr,table + h1,table + h2,table + h3,table + h4,table + h5,table + h6,table + hr,tfoot + h1,tfoot + h2,tfoot + h3,tfoot + h4,tfoot + h5,tfoot + h6,tfoot + hr,ul + h1,ul + h2,ul + h3,ul + h4,ul + h5,ul + h6,ul + hr,video + h1,video + h2,video + h3,video + h4,video + h5,video + h6,video + hr {
+  margin-top: @indent-var * 1.5;
+}
+
+
+// Spacing After a Header
+// --------------------------------------------------
+h1 + address,h1 + article,h1 + aside,h1 + audio,h1 + blockquote,h1 + canvas,h1 + dd,h1 + div,h1 + dl,h1 + fieldset,h1 + figcaption,h1 + figure,h1 + footer,h1 + form,h1 + header,h1 + hgroup,h1 + noscript,h1 + ol,h1 + output,h1 + p,h1 + pre,h1 + section,h1 + table,h1 + tfoot,h1 + ul,h1 + video,h2 + address,h2 + article,h2 + aside,h2 + audio,h2 + blockquote,h2 + canvas,h2 + dd,h2 + div,h2 + dl,h2 + fieldset,h2 + figcaption,h2 + figure,h2 + footer,h2 + form,h2 + header,h2 + hgroup,h2 + noscript,h2 + ol,h2 + output,h2 + p,h2 + pre,h2 + section,h2 + table,h2 + tfoot,h2 + ul,h2 + video,h3 + address,h3 + article,h3 + aside,h3 + audio,h3 + blockquote,h3 + canvas,h3 + dd,h3 + div,h3 + dl,h3 + fieldset,h3 + figcaption,h3 + figure,h3 + footer,h3 + form,h3 + header,h3 + hgroup,h3 + noscript,h3 + ol,h3 + output,h3 + p,h3 + pre,h3 + section,h3 + table,h3 + tfoot,h3 + ul,h3 + video,h4 + address,h4 + article,h4 + aside,h4 + audio,h4 + blockquote,h4 + canvas,h4 + dd,h4 + div,h4 + dl,h4 + fieldset,h4 + figcaption,h4 + figure,h4 + footer,h4 + form,h4 + header,h4 + hgroup,h4 + noscript,h4 + ol,h4 + output,h4 + p,h4 + pre,h4 + section,h4 + table,h4 + tfoot,h4 + ul,h4 + video,h5 + address,h5 + article,h5 + aside,h5 + audio,h5 + blockquote,h5 + canvas,h5 + dd,h5 + div,h5 + dl,h5 + fieldset,h5 + figcaption,h5 + figure,h5 + footer,h5 + form,h5 + header,h5 + hgroup,h5 + noscript,h5 + ol,h5 + output,h5 + p,h5 + pre,h5 + section,h5 + table,h5 + tfoot,h5 + ul,h5 + video,h6 + address,h6 + article,h6 + aside,h6 + audio,h6 + blockquote,h6 + canvas,h6 + dd,h6 + div,h6 + dl,h6 + fieldset,h6 + figcaption,h6 + figure,h6 + footer,h6 + form,h6 + header,h6 + hgroup,h6 + noscript,h6 + ol,h6 + output,h6 + p,h6 + pre,h6 + section,h6 + table,h6 + tfoot,h6 + ul,h6 + video,hr + address,hr + article,hr + aside,hr + audio,hr + blockquote,hr + canvas,hr + dd,hr + div,hr + dl,hr + fieldset,hr + figcaption,hr + figure,hr + footer,hr + form,hr + header,hr + hgroup,hr + noscript,hr + ol,hr + output,hr + p,hr + pre,hr + section,hr + table,hr + tfoot,hr + ul,hr + video {
+  margin-top: @indent-var / 4;
+}
+
+// Spacing Between Adjacent Headers
+// --------------------------------------------------
+h1 + h1,h1 + h2,h1 + h3,h1 + h4,h1 + h5,h1 + h6,h1 + hr,h2 + h1,h2 + h2,h2 + h3,h2 + h4,h2 + h5,h2 + h6,h2 + hr,h3 + h1,h3 + h2,h3 + h3,h3 + h4,h3 + h5,h3 + h6,h3 + hr,h4 + h1,h4 + h2,h4 + h3,h4 + h4,h4 + h5,h4 + h6,h4 + hr,h5 + h1,h5 + h2,h5 + h3,h5 + h4,h5 + h5,h5 + h6,h5 + hr,h6 + h1,h6 + h2,h6 + h3,h6 + h4,h6 + h5,h6 + h6,h6 + hr,hr + h1,hr + h2,hr + h3,hr + h4,hr + h5,hr + h6,hr + hr {
+  margin-top: @indent-var;
 }
 
 // Code

@@ -44,6 +44,16 @@ audio:not([controls]) {
 }
 
 /**
+ * Stop webkit from trying to screw margin up:
+ */
+p, h1, h2, h3, h4, h5 {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+/**
  * Address styling not present in IE 8/9.
  */
 
@@ -219,7 +229,9 @@ sub {
  */
 
 img {
-    border: 0;
+    border: 0;    
+		image-rendering: auto;            // Firefox: smooth
+		-ms-interpolation-mode: bicubic;  // IE: smooth
 }
 
 /**

@@ -37,8 +37,15 @@
   margin-right: auto;
 }
 
+.vcenter-block() {
+  display: inline-block;
+  vertical-align: middle;
+}
+
 // TYPOGRAPHY
 // --------------------------------------------------
+
+@indent-var: 0rem + (@doc-line-height / @doc-font-size);
 
 // Full-fat vertical rhythm
 // ------------------------
@@ -46,8 +53,6 @@
   font-size: 0px + @size;
   font-size: 0rem + @size / @doc-font-size;
   line-height: 0 + round(@doc-line-height / @size*10000) / 10000;
-  margin-bottom: 0px + @doc-line-height;
-  margin-bottom: 0rem + (@doc-line-height / @doc-font-size);
 }
 
 // Just the REMs
@@ -69,8 +74,6 @@
 overflow: hidden;
 text-overflow: ellipsis;
 white-space: nowrap; }
-
-@indent-var: 0rem + (@doc-line-height / @doc-font-size);
 
 // GRADIENTS
 // --------------------------------------------------
