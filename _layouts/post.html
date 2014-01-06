@@ -23,10 +23,8 @@
     {% include _author-bio.html %}
   </div>
   <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
-    <div class="headline-wrap">
-      <h1 itemprop="name">{{ page.title }}</h1>
-      <h2>{{ page.tagline }}</h2>
-    </div><!--/ .headline-wrap -->
+    <h1 itemprop="name">{{ page.title }}</h1>
+    {% if page.tagline %}<h2>{{ page.tagline }}</h2>{% endif %}
     <div class="article-wrap" itemprop="text">
       {{ content }}
       <hr />
