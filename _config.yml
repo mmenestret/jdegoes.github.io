@@ -26,7 +26,11 @@ owner:
 excerpt_separator: yabber jabber wibber wabber
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+google:
+  analytics:
+    id:           UA-46825055-1 
+    url:          degoes.net
+
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:        
