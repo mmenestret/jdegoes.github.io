@@ -199,7 +199,7 @@ By recognizing this fact, good code tries to expand our (very limited) capacity 
 
 ## FP Isn't the Answer
 
-In defining good code, I didn't say anything about functional programming, static types, or lots of other things, because those are "just" means to an end.
+In defining good code, I didn't say anything about functional programming, static types, or lots of other things, because those are "just" a means to an end.
 
 Sometimes (but not always, as I've shown in this post!), these means help us create, comprehend, and compose correct code.
 
