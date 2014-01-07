@@ -205,6 +205,8 @@ Sometimes (but not always, as I've shown in this post!), these means help us cre
 
 But by themselves, they are not the goal of our work.
 
+> Stated differently, whether or not something's "bad" is independent of whether or not it's "purely functional". "Purely functional" is neither a necessary nor sufficient condition for good code.
+
 We can't stop at functional. We can't pat ourselves on the back just because we wrote "purely functional" code. We can't ignore "non-functional" programming techniques, including whole other paradigms like logic programming and reactive programming.
 
 Every technique has to be measured on its own, independent of weather or not it's "functional".
