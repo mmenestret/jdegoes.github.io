@@ -8,7 +8,7 @@ tags:         [functional programming, CCC, 3 C's]
 
 Functional programming has enjoyed a surge in recent years. You can see in the proliferation of books and conferences, in the rapid growth of languages like Scala and Clojure, and in the very public conversions (John Carmack, Bob Martin, etc).
 
-These days, no one would dare announce a new programming language without supporting "functional programming." Heck, even conservative, mild-mannered, Enterprise-certified Java is getting [lambdas](http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html) and [monads](http://download.java.net/jdk8/docs/api/java/util/Optional.html)!
+These days, no one would dare announce a new programming language without supporting "functional programming." Heck, even conservative, mild-mannered, Enterprise-certified Java is getting [lambdas](http://docs.oracle.com/javase/tutorial/java/javaOO/lambdaexpressions.html) and [even](http://download.java.net/jdk8/docs/api/java/util/stream/Stream.html) [monads](http://download.java.net/jdk8/docs/api/java/util/Optional.html)!
 
 Yep, it's a whole new world.
 
