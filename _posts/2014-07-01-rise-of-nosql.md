@@ -43,7 +43,7 @@ The large database vendors either haven't tried their hand at NoSQL, or haven't 
 
 It's true that some vendors are *genuinely* trying to innovate. But others are so busy selling licenses, products, and solutions based on 40 year old legacy technology that the *biggest disruption* in databases since the invention of the RDBMS is happening right under their noses!
 
-## The Achilles' Heal of NoSQL
+## The Achilles' Heel of NoSQL
 
 While adoption is staggering, not everything is rainbows and sunshine in the land of NoSQL. NoSQL databases have a *critical vulnerability* that could ultimately curb or even reverse their expontential growth.
 
