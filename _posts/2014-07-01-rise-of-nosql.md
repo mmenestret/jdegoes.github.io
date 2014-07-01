@@ -12,7 +12,7 @@ NoSQL adoption is exploding, and not just in the startup scene. Even big compani
 
 MongoDB, the most widely-adopted NoSQL database, [recently raised](http://www.crunchbase.com/funding-round/5576d45dd1a3b6f606ba5c478660a4e3) $150 million dollars on a **$1,200,000,000** dollar valuation. 
 
-Yes, that's more than a billion dollars for an "boring" database company built around pure open source software!
+Yes, that's more than a billion dollars for a "boring" database company built around pure open source software!
 
 What you probably *haven't* heard, what's been *lost* in all the hype, is that NoSQL's unprecedented growth has very little to do with "big data" or "SQL"!
 
