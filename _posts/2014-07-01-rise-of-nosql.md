@@ -1,6 +1,6 @@
 ---
 layout:       post
-title:        "The Rise and Possible Downfall of NoSQL"
+title:        "The Rise (and Fall?) of NoSQL"
 description:  "NoSQL is exploding in popularity, with serious ramifications for the entire database industry."
 category:     articles
 tags:         [nosql, mongodb, oracle, json]
