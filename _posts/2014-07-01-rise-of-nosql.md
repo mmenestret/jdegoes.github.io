@@ -1,7 +1,7 @@
 ---
 layout:       post
-title:        "The Rise of NoSQL - Or Why Oracle Should be Shitting Its Pants Right Now"
-description:  "NoSQL is probably here to stay thanks to its profound effects on developer productivity."
+title:        "The Rise and Possible Downfall of NoSQL"
+description:  "NoSQL is exploding in popularity, with serious ramifications for the entire database industry."
 category:     articles
 tags:         [nosql, mongodb, oracle, json]
 ---
