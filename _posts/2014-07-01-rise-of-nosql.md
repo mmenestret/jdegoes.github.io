@@ -6,7 +6,7 @@ category:     articles
 tags:         [nosql, mongodb, oracle, json]
 ---
 
-If you haven't heard of the meteoric rise of NoSQL, you've been living in a hole. Likely at the bottom of the ocean. In the Mariana trench. Burried under a heap of rubble.
+If you haven't heard of the meteoric rise of NoSQL, you've been living in a hole. Likely at the bottom of the ocean. In the Mariana trench. Buried under a heap of rubble.
 
 NoSQL adoption is exploding, and not just in the startup scene. Even big companies like Apple and Comcast have skin in the game, with large NoSQL deployments that probably dwarf those at your company.
 
@@ -37,7 +37,7 @@ The pervasive theme here is that NoSQL *empowers* developers to rapidly create n
 
 Indeed, I'd argue that the macrosopic trend behind *many* of today's buzzwords (cloud, APIs, devops, PaaS, etc) is *developer empowerment* (AKA "The Rise of the Maker").
 
-As [Google Trends](http://www.google.com/trends/explore#q=mongodb%2C%20oracle%20db&cmpt=q) illustrates (albeit unscientifically!), more and more developers are turning to these databases to build new applications. MongoDB alone has been downloaded more than 7 million times (with 2 million of those downloads ocurring in the last 6 months)!
+As [Google Trends](http://www.google.com/trends/explore#q=mongodb%2C%20oracle%20db&cmpt=q) illustrates (albeit unscientifically!), more and more developers are turning to these databases to build new applications. MongoDB alone has been downloaded more than 7 million times (with 2 million of those downloads occurring in the last 6 months)!
 
 The large database vendors either haven't tried their hand at NoSQL, or haven't seen adoption like MongoDB. 
 
@@ -45,7 +45,7 @@ It's true that some vendors are *genuinely* trying to innovate. But others are s
 
 ## The Achilles' Heel of NoSQL
 
-While adoption is staggering, not everything is rainbows and sunshine in the land of NoSQL. NoSQL databases have a *critical vulnerability* that could ultimately curb or even reverse their expontential growth.
+While adoption is staggering, not everything is rainbows and sunshine in the land of NoSQL. NoSQL databases have a *critical vulnerability* that could ultimately curb or even reverse their exponential growth.
 
 It's quite simple: analytics tooling for NoSQL databases is almost non-existent. Apps stuff a lot of data into these databases, but legacy analytics tooling based on relational technology can't make any sense of it (because it's not uniform, tabular data).
 
@@ -59,7 +59,7 @@ PostgreSQL is leading the way here, even though it has a *long* way to go. An op
 
 ## What's Next?
 
-NoSQL adoption is currently driving the creation of billion dollar database copmanies, the likes of which have not been seen in *decades*. The money being poured into this sector will spawn other billion dollar NoSQL industries, in much the same way that RDBMS spawned BI, ETL, data warehousing, and many others.
+NoSQL adoption is currently driving the creation of billion dollar database companies, the likes of which have not been seen in *decades*. The money being poured into this sector will spawn other billion dollar NoSQL industries, in much the same way that RDBMS spawned BI, ETL, data warehousing, and many others.
 
 It's a *massive* landgrab right now, as every NoSQL vendor tries to carve out the largest set of use cases that their technology can handle.
 
