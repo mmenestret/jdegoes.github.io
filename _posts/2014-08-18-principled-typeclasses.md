@@ -136,7 +136,9 @@ In Scala, the situation is even more of a no-man's land, because there are fewer
 
 In other languages without type classes or implicits, there's no ambiguity, because users must be *explicit* in selecting a given instance of a type class. Unfortunately, this increase in precision comes with a corresponding increase in verbosity!
 
-Now no matter how you slice it, for a given type, there may be many (perhaps even infinitely many!) ways to implement an instance that satisfies the laws of the type class. In Haskell, the community's preferred solution is to create wrapper types (`newtype`s) and define the instances on the wrappers instead. You can then "force" the compiler to choose the instance you want by using the right wrapper type. It works, but it's totally ad hoc and relies on convention rather than compiler.
+Now no matter how you slice it, for a given type, there may be many (perhaps even infinitely many!) ways to implement an instance that satisfies the laws of the type class. In Haskell, the community's preferred solution is to create wrapper types (`newtype`s) and define the instances on the wrappers instead. You can then "force" the compiler to choose the instance you want by using the right wrapper type.
+
+This practice, which I call *newtype absue*, works well enough, but it's totally ad hoc and unprincipled. You're abusing the type system to force the compiler to select a desired instance that satisfies no more laws than another instance. There are *functional requirements* not being verified by the compiler, and instead being encoded into the *name* of a `newtype` wrapper!
 
 ### Abstraction
 
