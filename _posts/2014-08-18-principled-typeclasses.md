@@ -278,7 +278,7 @@ Note that in this code, I'm explicitly capturing the fact that I *care* about mo
 There would be several positive side effects of this approach:
 
 1. **No Newtype Abuse**. There's no need for the ad hoc practice of abusing `newtype` to force Haskell to select the "right" type class instance. (In fact, I'd like the compiler to forbid this abuse of `newtype` for instance selection.)
-2. **More Generic Code**. For example, the above function `addOneTwo` works any type that's provably isomorphic to `Integer`.
+2. **More Generic Code**. For example, the above function `addOneTwo` works on any type that's provably isomorphic to `Integer` (and some use cases wouldn't even require laws that strong).
 3. **Lawful Thinking**. The compiler forces you to think about which additional laws you need to choose the instance you want, and to state those laws in compiler-verifiable properties.
 
 ### Abstractable
