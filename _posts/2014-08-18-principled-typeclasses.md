@@ -269,14 +269,14 @@ addOneTwo a b = a `append` b
 addOneTwo 1 2
 {% endhighlight %}
 
-My function `addOneTwo` has stronger constraints than just `Monoid`. So when I call that function with `Integer`s, the compiler is able to select the unique instance which satisfies my stronger constraints.
+My function `addOneTwo` has stronger constraints than just `Monoid`. So when I call that function with `Integer`, the compiler is able to select the unique instance which satisfies my stronger constraints.
 
 Note that in this code, I'm explicitly capturing the fact that I *care* about more than just the `Monoid` laws when the compiler chooses the instance for `Integer`. I'm capturing that fact in a way that is *rigorous* and *compiler-verified*.
 
 There would be several positive side effects of this approach:
 
-1. **No Newtype Abuse**. There's no need for the ad hoc practice of abusing `newtype`s to force Haskell to select the "right" type class instance. (In fact, I'd like the compiler to forbid this abuse of `newtype`s for instance selection.)
-2. **More Generic Code**. For example, the above function `addOneTwo` works any type that's provably isomorphic to `Integer`s.
+1. **No Newtype Abuse**. There's no need for the ad hoc practice of abusing `newtype` to force Haskell to select the "right" type class instance. (In fact, I'd like the compiler to forbid this abuse of `newtype` for instance selection.)
+2. **More Generic Code**. For example, the above function `addOneTwo` works any type that's provably isomorphic to `Integer`.
 3. **Lawful Thinking**. The compiler forces you to think about which additional laws you need to choose the instance you want, and to state those laws in compiler-verifiable properties.
 
 ### Abstractable
