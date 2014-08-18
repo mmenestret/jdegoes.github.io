@@ -13,31 +13,31 @@ There are lots of possible monoids, and we'd like to be able to write generic co
 
 In Haskell, we do that with type classes:
 
-```
+{% highlight haskell %}
 class Monoid a where
   empty :: a
   append :: a -> a -> a
-```
+{% endhighlight %}
 
 In SML, we do it with modules:
 
-```
+{% highlight SML %}
 signature MONOID = 
  sig
    type t
    val append: t*t -> t
    val empty: t
  end;
-```
+{% endhighlight %}
 
 And in Java, we do it with interfaces:
 
-```
+{% highlight java %}
 interface Monoid<A> {
   A empty();
   A append(A v1, A v2);
 }
-```
+{% endhighlight %}
 
 Of these solutions, Haskell type classes are by far the sexiest because of compiler magic that makes using them so effortless. 
 
@@ -49,20 +49,20 @@ In Haskell, you provide a concrete implementation for a type class by defining a
 
 For example, we can create the additive monoid for natural numbers as follows:
 
-```
+{% highlight haskell %}
 instance Monoid Integer where
   empty = 0 :: Integer
   append a b = a + b
-```
+{% endhighlight %}
 
 Ordinarily, we would define this instance in either the module that `Monoid` is defined, or the module that `Integer` is defined (if we were defining it at all, and we wouldn't for reasons I'll explain later).
 
 If we play by these rules, then any module that imports both `Monoid` and `Integer` will be able to use this `Monoid` instance trivially and automatically:
 
-```
+{% highlight haskell %}
 Prelude> append 1 2
 3
-```
+{% endhighlight %}
 
 When I called the `append` function, I did not specify which type class instance the compiler should use. The compiler infers the type of the parameters to the `append` function, and finds a suitable instance (in this case, the instance we just defined).
 
@@ -72,7 +72,7 @@ Scala has poor-man's type classes. Or rather, you can simulate type classes (and
 
 The above example might look like this in Scala:
 
-```
+{% highlight scala %}
 trait Monoid[A] {
   def empty: A
   def append(v1: A, v2: A): A
@@ -88,7 +88,7 @@ implicit val MonoidInt = new Monoid[Int] {
 
 scala> append(1, append(2, empty[Int]))
 res2: Int = 3
-```
+{% endhighlight %}
 
 Beautiful, right? Well, yes &mdash; type classes are indeed a wonderful creation responsible for much clean, generic, highly-maintainable, *beautiful* code.
 
@@ -150,13 +150,13 @@ Ironically, in weaker languages that don't support type classes, abstraction is 
 
 For example, in Scala we can express the above notion like this:
 
-```
+{% highlight scala %}
 trait ConstrainedMonad[F[_], TC[_]] {
   def point[A: TC](a: A): F[A]
 
   def bind[A: TC, B: TC](fa: F[A])(f: A => F[B]): F[B]
 }
-```
+{% endhighlight %}
 
 This allows us to abstract over the notion of monads within a specific (sub)category of the host language, and it's just one of many examples of how abstracting over type classes could be useful.
 
@@ -188,11 +188,11 @@ By lawful, I want the ability to state the laws for a type class when defining t
 
 Dependently-typed languages can do this easily in many cases. Idris, for example, introduces a `VerifiedMonoid` class which cannot be implemented for a type without proving its laws are satisfied for that type (unless you cheat!):
 
-```
+{% highlight haskell %}
 class (VerifiedSemigroup a, Monoid a) => VerifiedMonoid a where
   total monoidNeutralIsNeutralL : (l : a) -> l <+> neutral = l
   total monoidNeutralIsNeutralR : (r : a) -> neutral <+> r = r
-```
+{% endhighlight %}
 
 Dependent-typing, however, is not a panacea. You can't use it to prove laws about effects, like proving the monad laws for Haskell's `IO`. I'm not sure whether that's a good thing or a bad thing.
 
@@ -200,12 +200,12 @@ But I do think that dependent-typing isn't necessary to have lawful type classes
 
 One can imagine defining laws like this (warning: bullshit syntax):
 
-```
+{% highlight haskell %}
 class Semigroup a => Monoid a where
   empty :: a
   
   law emptyIsIdentity a = ((a `append` empty) .==. a) .&&. (empty `append` a) .==. a
-```
+{% endhighlight %}
 
 where the compiler would infer constraints for law parameters (for example, an `Arb` instance for `a`), and require that instances pass the laws of both `Monoid`, as well as its superclass `Semigroup`.
 
@@ -237,7 +237,7 @@ Let's say I want to define both additive and multiplicative monoids for integers
 
 For example:
 
-```
+{% highlight haskell %}
 class Integral a where
   toInteger   :: a -> Integer  
   fromInteger :: Integer -> a
@@ -250,7 +250,7 @@ class (Monoid a, Integral a) => IntMultMonoid a where
   
 class (Monoid a, Integral a) => IntAddMonoid a where
   law appendIsIntAdd a b = (fromInteger $ (toInteger a) + (toInteger b)) .==. a `append` b
-```
+{% endhighlight %}
 
 (These are poorly factored and over-constrained, but they're enough to demonstrate my point!)
 
@@ -258,20 +258,20 @@ Now assume we've defined instances of both of these type classes for `Integer`. 
 
 If I tried the naive approach, I'd run into problems:
 
-```
+{% highlight haskell %}
 1 `append` 2
-```
+{% endhighlight %}
 
 This would generate a compiler error, because there exist two instances which satisfy the laws for `Semigroup` and `Integer`.
 
 However, I can further constrain my code as follows:
 
-```
+{% highlight haskell %}
 addOneTwo :: (IntAddMonoid a) => a -> a -> a
 addOneTwo a b = a `append` b
 
 addOneTwo 1 2
-```
+{% endhighlight %}
 
 My function `addOneTwo` has stronger constraints than just `Monoid`. So when I call that function with `Integer`s, the compiler is able to select the unique instance which satisfies my stronger constraints.
 
