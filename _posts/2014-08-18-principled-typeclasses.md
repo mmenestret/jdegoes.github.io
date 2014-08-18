@@ -276,7 +276,7 @@ There would be several positive side effects of this approach:
 I think that making type classes abstractable and fully composable requires two things:
 
 1. First-class modules, which can be passed around and manipulated like values. 
-2. Probably named instances (which, for example, Purescript and Idris already support!).
+2. Probably named instances (which, for example, Purescript and Idris already support!). Named instances aren't necessary for instance selection, but they would be helpful when wanting a concise way of referring to a specific module.
 
 Obviously, in languages that don't have type classes, the emulated type classes are ordinary values and can be abstracted and composed like other values.
 
