@@ -160,7 +160,7 @@ Ironically, in weaker languages that don't support type classes, abstraction is 
 
 I don't know what the *best* solution to these issues is. But I do have some ideas about what *I* want from type classes:
 
-1. **Haskell-style**. A first-class notion of type classes in the overall style of Haskell, Purescript, Idris, etc.
+1. **Haskell-style**. A baked-in notion of type classes in the overall style of Haskell, Purescript, Idris, etc.
 2. **Lawful**. First-class laws for type classes, which are enforced by the compiler.
 3. **Hierarchical**. A compiler-verified requirement that a subclass of a type class must have at least one more law than that type class.
 4. **Globally Unambiguous**. Type class resolution that produces an error if there exists more than one instances which satisfies the constraints at the point where the compiler must choose an instance.
@@ -170,7 +170,7 @@ I'll explore what I mean by each of these in the sections that follow.
 
 ### Haskell-Style
 
-Some have made [compelling arguments](http://www.haskellforall.com/2012/05/scrap-your-type-classes.html) for abolishing type classes in Haskell, at least as first-class language constructs. 
+Some have made [compelling arguments](http://www.haskellforall.com/2012/05/scrap-your-type-classes.html) for abolishing type classes in Haskell, at least as baked-in language constructs. 
 
 I'm obviously sympathetic to this point of view, but I just view the problems with built-in type classes as a reason to *make them better* rather than to *abolish them*.
 
