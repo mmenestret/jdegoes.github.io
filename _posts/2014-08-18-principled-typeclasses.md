@@ -132,13 +132,20 @@ For orphan instances, which type class instance you get depends on what you impo
 
 We can't just ignore this issue or the reason why it exists. For a given type, there may be *many* (perhaps even infinitely many!) ways to implement an instance that satisfies the laws of the type class. 
 
-In Haskell, the community's preferred solution is to create wrapper types (`newtype`s) and define the instances on the wrappers instead. You can then "force" the compiler to choose the instance you want by using the right wrapper type.
+In Haskell, the community's preferred solution is to create wrapper types (`newtype`) and define instances on the wrappers instead. You can then "force" the compiler to choose the instance you want by using the right wrapper type.
 
-This practice, which I lovingly call *newtype absue*, works well enough, but it's totally ad hoc and unprincipled. While you can force the compiler to select a desired instance by wrapping a value in the right `newtype`, the instance satisfies *no more laws* than another `newtype` wrapper. 
+This practice, which I lovingly call *newtype absue*, works well enough, but it's totally ad hoc and unprincipled. While you can force the compiler to select a desired instance by wrapping values in the right `newtype`, the instance satisfies *no more laws* than another `newtype` wrapper. 
 
-In other words, if you abuse newtypes, you are encoding functional requirements into the *name* of a `newtype` wrapper, instead of making the compiler verify them! If the *correctness* of your monoidal code depends on more properties being satisfied by an instance than just the `Monoid` laws (e.g. if you require the multiplicative monoid for integers), then the compiler should be able to verify those properties. 
+Stated more forcefully, when we abuse newtypes, we are encoding functional requirements into the *name* of a `newtype` wrapper, instead of making the compiler verify those requirements!
+
+If the *correctness* of your monoidal code depends on more properties being satisfied by an instance than just the `Monoid` laws (e.g. if you require the multiplicative monoid for integers), then the compiler should be able to verify those properties. 
 
 The alternative is ascribing arbitrary and unenforceable significance to the names of data constructors.
+
+#### Brief Digression on Newtypes
+
+Newtypes aren't always bad, but they're almost always an example of "programming by name". For example, if you define `newtype Email = String`, you haven't restricted the set of valid values for `Email` &mdash; every valid string is also a valid email, and visa versa. On the other hand, if we use smart constructors for a new `Email` type, then we can restrict the set of `Email` to be those strings which are actually valid emails. Both approaches make the code easier to read, but only one of them actually leverages the compiler to enforce properties of correctness.
+
 
 ### Abstraction
 
