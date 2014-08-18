@@ -142,23 +142,11 @@ Now no matter how you slice it, for a given type, there may be many (perhaps eve
 
 In Haskell, you cannot abstract over type classes in the same way you can abstract over functions and other values. Why? Because type classes are magical &mdash; they're neither values nor types, so you can't rely on the ordinary machinery of abstraction.
 
-Let's say you want to create a constrained monad type class, in which `point` and `bind` may be called only with types that satisfy a given type class. 
+Let's say I want to take two type classes, and programmatically combine them (and possibly one or more values) to create another type class. (TODO: Example.)
 
-How would you express this in Haskell? You can't (at least not easily), because type classes are magical!
+How would you express this in Haskell? You can't, because type classes are magical!
 
 Ironically, in weaker languages that don't support type classes, abstraction is usually possible, because the type classes are emulated using first-class language features, such as dictionaries, interfaces, traits, or modules.
-
-For example, in Scala we can express the above notion like this:
-
-{% highlight scala %}
-trait ConstrainedMonad[F[_], TC[_]] {
-  def point[A: TC](a: A): F[A]
-
-  def bind[A: TC, B: TC](fa: F[A])(f: A => F[B]): F[B]
-}
-{% endhighlight %}
-
-This allows us to abstract over the notion of monads within a specific (sub)category of the host language, and it's just one of many examples of how abstracting over type classes could be useful.
 
 ## Principled Type Classes?
 
