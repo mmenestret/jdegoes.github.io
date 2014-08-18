@@ -130,15 +130,15 @@ If for a given type class and type, instances are defined elsewhere (not in the 
 
 For orphan instances, which type class instance you get depends on what you import!
 
-Orphan type classes are generally frowned upon in the Haskell community, but they're not illegal. Haskell compilers freely and unfortunately allow them.
+We can't just ignore this issue or the reason why it exists. For a given type, there may be *many* (perhaps even infinitely many!) ways to implement an instance that satisfies the laws of the type class. 
 
-In Scala, the situation is even more of a no-man's land, because there are fewer restrictions, thanks to the fact that we emulate type classes in Scala with implicits.
+In Haskell, the community's preferred solution is to create wrapper types (`newtype`s) and define the instances on the wrappers instead. You can then "force" the compiler to choose the instance you want by using the right wrapper type.
 
-In other languages without type classes or implicits, there's no ambiguity, because users must be *explicit* in selecting a given instance of a type class. Unfortunately, this increase in precision comes with a corresponding increase in verbosity!
+This practice, which I lovingly call *newtype absue*, works well enough, but it's totally ad hoc and unprincipled. While you can force the compiler to select a desired instance by wrapping a value in the right `newtype`, the instance satisfies *no more laws* than another `newtype` wrapper. 
 
-Now no matter how you slice it, for a given type, there may be many (perhaps even infinitely many!) ways to implement an instance that satisfies the laws of the type class. In Haskell, the community's preferred solution is to create wrapper types (`newtype`s) and define the instances on the wrappers instead. You can then "force" the compiler to choose the instance you want by using the right wrapper type.
+In other words, if you abuse newtypes, you are encoding functional requirements into the *name* of a `newtype` wrapper, instead of making the compiler verify them! If the *correctness* of your monoidal code depends on more properties being satisfied by an instance than just the `Monoid` laws (e.g. if you require the multiplicative monoid for integers), then the compiler should be able to verify those properties. 
 
-This practice, which I call *newtype absue*, works well enough, but it's totally ad hoc and unprincipled. You're abusing the type system to force the compiler to select a desired instance that satisfies no more laws than another instance. There are *functional requirements* not being verified by the compiler, and instead being encoded into the *name* of a `newtype` wrapper!
+The alternative is ascribing arbitrary and unenforceable significance to the names of data constructors.
 
 ### Abstraction
 
