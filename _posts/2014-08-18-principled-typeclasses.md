@@ -240,7 +240,7 @@ class (Monoid a, Integral a) => IntAddMonoid a where
   law appendIsIntAdd a b = (fromInteger $ (toInteger a) + (toInteger b)) .==. a `append` b
 {% endhighlight %}
 
-(These are poorly factored and over-constrained, but they're enough to demonstrate my point!)
+(These are over-constrained &mdash; many uses could get by with weaker laws &mdash; but they're enough to demonstrate my point!)
 
 Now assume we've defined instances of both of these type classes for `Integer`. How do I use them?
 
@@ -276,7 +276,7 @@ There would be several positive side effects of this approach:
 I think that making type classes abstractable and fully composable requires two things:
 
 1. First-class modules, which can be passed around and manipulated like values. 
-2. Probably named instances (which, for example, Purescript and Idris already support!). Named instances aren't necessary for instance selection, but they would be helpful when wanting a concise way of referring to a specific module.
+2. Probably named instances (which, for example, Purescript and Idris already support!). Named instances aren't necessary for instance selection, but they would be helpful as a concise way of referring to a specific "module".
 
 Obviously, in languages that don't have type classes, the emulated type classes are ordinary values and can be abstracted and composed like other values.
 
