@@ -13,7 +13,7 @@ There are lots of possible monoids, and we'd like to be able to write generic co
 
 In Haskell, we do that with type classes:
 
-```Haskell
+```
 class Monoid a where
   empty :: a
   append :: a -> a -> a
@@ -21,7 +21,7 @@ class Monoid a where
 
 In SML, we do it with modules:
 
-```SML
+```
 signature MONOID = 
  sig
    type t
@@ -32,7 +32,7 @@ signature MONOID =
 
 And in Java, we do it with interfaces:
 
-```Java
+```
 interface Monoid<A> {
   A empty();
   A append(A v1, A v2);
@@ -49,7 +49,7 @@ In Haskell, you provide a concrete implementation for a type class by defining a
 
 For example, we can create the additive monoid for natural numbers as follows:
 
-```Haskell
+```
 instance Monoid Integer where
   empty = 0 :: Integer
   append a b = a + b
@@ -72,7 +72,7 @@ Scala has poor-man's type classes. Or rather, you can simulate type classes (and
 
 The above example might look like this in Scala:
 
-```scala
+```
 trait Monoid[A] {
   def empty: A
   def append(v1: A, v2: A): A
@@ -150,7 +150,7 @@ Ironically, in weaker languages that don't support type classes, abstraction is 
 
 For example, in Scala we can express the above notion like this:
 
-```scala
+```
 trait ConstrainedMonad[F[_], TC[_]] {
   def point[A: TC](a: A): F[A]
 
@@ -188,7 +188,7 @@ By lawful, I want the ability to state the laws for a type class when defining t
 
 Dependently-typed languages can do this easily in many cases. Idris, for example, introduces a `VerifiedMonoid` class which cannot be implemented for a type without proving its laws are satisfied for that type (unless you cheat!):
 
-```Haskell
+```
 class (VerifiedSemigroup a, Monoid a) => VerifiedMonoid a where
   total monoidNeutralIsNeutralL : (l : a) -> l <+> neutral = l
   total monoidNeutralIsNeutralR : (r : a) -> neutral <+> r = r
@@ -200,7 +200,7 @@ But I do think that dependent-typing isn't necessary to have lawful type classes
 
 One can imagine defining laws like this (warning: bullshit syntax):
 
-```Haskell
+```
 class Semigroup a => Monoid a where
   empty :: a
   
@@ -237,7 +237,7 @@ Let's say I want to define both additive and multiplicative monoids for integers
 
 For example:
 
-```Haskell
+```
 class Integral a where
   toInteger   :: a -> Integer  
   fromInteger :: Integer -> a
@@ -258,7 +258,7 @@ Now assume we've defined instances of both of these type classes for `Integer`. 
 
 If I tried the naive approach, I'd run into problems:
 
-```Haskell
+```
 1 `append` 2
 ```
 
@@ -266,7 +266,7 @@ This would generate a compiler error, because there exist two instances which sa
 
 However, I can further constrain my code as follows:
 
-```Haskell
+```
 addOneTwo :: (IntAddMonoid a) => a -> a -> a
 addOneTwo a b = a `append` b
 
