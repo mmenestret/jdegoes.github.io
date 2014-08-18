@@ -144,7 +144,7 @@ The alternative is ascribing arbitrary and unenforceable significance to the nam
 
 #### Brief Digression on Newtypes
 
-Newtypes aren't always bad, but they're often an example of "programming by name". For example, if you define `newtype Email = String`, you haven't restricted the set of valid values for `Email` &mdash; every valid string is also a valid email, and visa versa. On the other hand, if we use smart constructors for a new `Email` type, then we can restrict the set of `Email` to be those strings which are actually valid emails. Both approaches make the code easier to read, but only one of them actually leverages the compiler to enforce properties of correctness.
+> Newtypes aren't always bad, but they're often an example of "programming by name". For example, if you define `newtype Email = String`, you haven't restricted the set of valid values for `Email` &mdash; every valid string is also a valid email, and visa versa. On the other hand, if we use smart constructors for a new `Email` type, then we can restrict the set of `Email` to be those strings which are actually valid emails. Both approaches make the code easier to read, but only one of them actually leverages the compiler to enforce properties of correctness.
 
 ### Abstraction
 
