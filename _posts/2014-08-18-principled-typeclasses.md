@@ -1,7 +1,6 @@
 ---
 layout:       post
 title:        "Haskell's Type Classes: We Can Do Better"
-tagline:      "Ideas on how to fix some of what's wrong with type classes"
 description:  "Ideas on how to fix some of what's wrong with type classes."
 category:     articles
 tags:         [functional programming, typeclasses, ml, modules, haskell, scala, java, idris, purescript]
