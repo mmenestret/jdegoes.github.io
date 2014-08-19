@@ -209,6 +209,6 @@ But by themselves, they are not the goal of our work.
 
 We can't stop at functional. We can't pat ourselves on the back just because we wrote "purely functional" code. We can't ignore "non-functional" programming techniques, including whole other paradigms like logic programming and reactive programming.
 
-Every technique has to be measured on its own, independent of weather or not it's "functional".
+Every technique has to be measured on its own, independent of whether or not it's "functional".
 
 In future posts, I hope to talk more about *comprehensibility*, dig into some meaty examples, and rant against monads (which I believe are often an *anti-pattern* in functional programming).
