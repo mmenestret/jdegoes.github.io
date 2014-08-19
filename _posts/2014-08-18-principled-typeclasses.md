@@ -134,7 +134,7 @@ We can't just ignore this issue or the reason why it exists. For a given type, t
 
 In Haskell, the community's preferred solution is to create wrapper types (`newtype`) and define instances on the wrappers instead. You can then "force" the compiler to choose the instance you want by using the right wrapper type.
 
-This practice, which I lovingly call *newtype absue*, works well enough, but it's totally ad hoc and unprincipled. While you can force the compiler to select a desired instance by wrapping values in the right `newtype`, the instance satisfies *no more laws* than another `newtype` wrapper. 
+This practice, which I lovingly call *newtype abuse*, works well enough, but it's totally ad hoc and unprincipled. While you can force the compiler to select a desired instance by wrapping values in the right `newtype`, the instance satisfies *no more laws* than another `newtype` wrapper. 
 
 Stated more forcefully, when we abuse newtypes, we are encoding functional requirements into the *name* of a `newtype` wrapper, instead of making the compiler verify those requirements!
 
