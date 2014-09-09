@@ -32,9 +32,9 @@ There's a slight semantic difference between the two, but for purposes of this b
 
 ## The Promise of Newtypes
 
-Newtypes are used to provide alternate implementations of type classes for some base types. I think that's a limitation of type classes, but I've [already talked about this](/articles/principled-typeclasses/) so I won't belabor it here.
+Newtypes are used to provide alternate implementations of type classes for some base types. I think that's a hack (albeit a necessary one), but I've [already talked about this](/articles/principled-typeclasses/) so I won't belabor it here.
 
-The other promise of newtypes is that we can use them to make our code more type safe. Instead of passing around `String`s as emails, for example, we can create a super lightweight "wrapper" around a `String` called `Email`, and make it an error to use a `String` wherever an `Email` is expected.
+The other promise of newtypes is that we can use them to make our code more type safe. Instead of passing around `String` as an email, for example, we can create a super lightweight "wrapper" around `String` called `Email`, and make it an error to use a `String` wherever an `Email` is expected.
 
 This practice isn't restricted to Haskell. Even in Java, it's considered good coding practice to wrap primitives with classes whose names denote the meaning of the wrapper (Email, SSN, Address, etc.).
 
@@ -53,7 +53,7 @@ For most intent and purposes, newtypes are *isomorphic* to the single value they
 
 In my preceding example, given a `String`, I can get an email (`Email "foo"`). Given an `Email`, I can also get a `String`, e.g. by pattern matching on the `Email` constructor.
 
-Stated differently, and also approximately because I'm ignoring bottom: the `String` and `Email` types are isomorphic; they contain the same inhabitants, for any useful definition of "same". The only substantive difference between the preceding `String` and `Email` is the name of the data constructor (call `Email` and `AbergrackleFoozywatzit`, and what has changed?). 
+Stated differently, and also approximately because I'm ignoring bottom: the `String` and `Email` types are isomorphic; they contain the same inhabitants, for any useful definition of "same". The only substantive difference between the preceding `String` and `Email` is the name of the data constructor (call `Email` an `AbergrackleFoozyWatzit`, and what has changed?). 
 
 Hence, my previous criticism of newtypes as "programming by name".
 
@@ -61,7 +61,7 @@ By themselves, newtypes don't *really* reduce the number of ways my program can 
 
 In fact, if my code doesn't need to convert between the two (either directly or indirectly), then it's better off generic. That is, if I never need to convert an `Email` to a `String`, or a `String` to an `Email`, then I should really write the code generically to work with any value (even if that means making data structures or functions more polymorphic).
 
-Parametrically provides a massive reduction in the number of ways my program can go wrong. Newtypes, on the other hand, just make it a bit harder to go wrong, by adding one layer of indirection.
+Parametricity provides a massive reduction in the number of ways my program can go wrong. Newtypes, on the other hand, just make it a bit harder to go wrong, by adding one layer of indirection.
 
 In this example, as with many newtypes, I've created a bad isomorphism. The domain model of an email is not isomorphic to the data model of a string. But by using a newtype, I have implicitly declared that they *are* isomorphic.
 
