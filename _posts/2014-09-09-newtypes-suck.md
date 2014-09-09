@@ -32,11 +32,13 @@ There's a slight semantic difference between the two, but for purposes of this b
 
 ## The Promise of Newtypes
 
-The promise of newtypes is that we can cheaply make our code more type safe. Instead of passing around `String`s as emails, for example, we can create a super lightweight "wrapper" around a `String` called `Email`, and make it an error to use a `String` where an `Email` is expected.
+Newtypes are used to provide alternate implementations of type classes for some base types. I think that's a limitation of type classes, but I've [already talked about this](/articles/principled-typeclasses/) so I won't belabor it here.
 
-Even in Java, it's considered good coding practice to wrap primitives with classes whose names denote the meaning of the wrapper (Email, SSN, Address, etc.).
+The other promise of newtypes is that we can use them to make our code more type safe. Instead of passing around `String`s as emails, for example, we can create a super lightweight "wrapper" around a `String` called `Email`, and make it an error to use a `String` wherever an `Email` is expected.
 
-There's part of this promise that's certainly true. If I have to define a function accepting 4 parameters, and 3 of them are strings, but one of those strings denotes an email, then I have two choices:
+This practice isn't restricted to Haskell. Even in Java, it's considered good coding practice to wrap primitives with classes whose names denote the meaning of the wrapper (Email, SSN, Address, etc.).
+
+There's part of this promise that's *certainly* true. If I have to define a function accepting four parameters, and three of them are strings, but one of those strings denotes an email, then I have two choices:
 
 1. Model the email parameter with a `String`. In this case, I may accidentally use the email where I intended to use the other two string parameters, or I may use one of the other two string parameters where I intended to use the email. Considering just these choices, there are **five** ways my program may go wrong if I use the wrong name in the wrong position.
 2. Model the email parameter with a `newtype`. In this case, I cannot use the email where I intended to use the other two string parameters, because the compiler may stop me. Similarly, I cannot use the other two string parameters where I intended to use the email, for the same reason. Looking at just these choices, there are **0** ways my program may go wrong.
