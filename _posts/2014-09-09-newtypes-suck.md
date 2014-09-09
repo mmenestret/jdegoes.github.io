@@ -8,7 +8,7 @@ tags:         [functional programming, ml, haskell, scala, idris, purescript]
 
 My [last post](/articles/principled-typeclasses/) talked about what's wrong with type classes (in general, but also specifically in Haskell). This post generated some [great feedback on Reddit](http://www.reddit.com/r/haskell/comments/2dw3zq/haskells_type_classes_why_we_can_do_better/), including some valid criticism that I didn't explain why I hated on newtypes so much.
 
-I took some of that feedback and incorporated it into a [revised version](/articles/principled-typeclasses/) of the post, but I have a *lot* more to say about "newtypes", so I decided to write another blog post.
+I took some of that feedback and incorporated it into a [revised version](/articles/principled-typeclasses/) of the post, but I have even *more* to say about "newtypes", so I decided to write another blog post.
 
 ## What's in a Newtype
 
@@ -32,7 +32,7 @@ There's a slight semantic difference between the two, but for purposes of this b
 
 ## The Promise of Newtypes
 
-Newtypes are used to provide alternate implementations of type classes for some base types. I think that's a hack (albeit a necessary one), but I've [already talked about this](/articles/principled-typeclasses/) so I won't belabor it here.
+Newtypes are used to provide and select between alternate implementations of type classes for some base types. I think that's a hack (albeit a necessary one), but I've [already talked about this](/articles/principled-typeclasses/) so I won't belabor it here.
 
 The other promise of newtypes is that we can use them to make our code more type safe. Instead of passing around `String` as an email, for example, we can create a super lightweight "wrapper" around `String` called `Email`, and make it an error to use a `String` wherever an `Email` is expected.
 
@@ -67,7 +67,7 @@ In this example, as with many newtypes, I've created a bad isomorphism. The doma
 
 Calling a string an email may make me *feel* better, because of the different name, but fundamentally, with a newtype, it's still a string, and I'm only ever *one more step away* from going wrong.
 
-In my experience, a *lot* of newtypes create an isomorphism between things that, properly modeled, are *not* isomorphic. 
+In my experience, too many newtypes create an isomorphism between things that, properly modeled, are *not* isomorphic. 
 
 Fortunately, there's a well-worn *workaround* that lets us get more mileage out of newtypes.
 
@@ -80,7 +80,7 @@ They can be used to *break* the natural isomorphisms created by newtyping.
 An example is shown below:
 
 {% highlight haskell %}
-newtype Email = Email String
+newtype Email = MkEmail String
 
 mkEmail :: String -> Maybe Email
 mkEmail s = ...
@@ -88,36 +88,36 @@ mkEmail s = ...
 
 In this example, I create a smart constructor which does *not* promise that it can turn *every* string into an email. It promises only that it *might* be able to turn a string into an email, by returning a `Maybe Email`.
 
-With the smart constructor approach, I've modeled the fact that while *every* email has a string representation, not *every* string is an email.
+With the smart constructor approach, I've modeled the fact that while *every* email has a string representation, not *every* string has an email representation.
 
-Going back to my earlier example of three parameters to a function, if I use a smart constructor, then while I can still use an email anywhere a string is expected (by converting), I can't use a string anywhere an email is expected. (Well, ignoring the `fromJust` abomination.)
+Going back to my earlier example of passing same-typed parameters to a function, if I use a smart constructor, then while I can still use an email anywhere a string is expected (by converting), I can't use a string anywhere an email is expected. (Well, ignoring the `fromJust` abomination!)
 
 ### Smart Constructors, Dumb Data
 
 Smart constructors take us one step closer toward modeling data in a type safe fashion. 
 
-Unfortunately, I don't think it's far enough.
+Unfortunately, I *still* don't think it's far enough.
 
 With smart constructors, our data model is fundamentally *underconstrained*, so we patch that up by restricting who can create the data. That's putting a band-aid on the real problem.
 
-Why not just solve the root issue, that our data model is underconstrained?
+Why not just solve the root issue &mdash; viz., that our data model is underconstrained?
 
 ## Dumb Constructors, Smart Data
 
-The best solution to this problem, I believe, is creating a data model where there is a *true* isomorphism between the entity modeled by our data and the product of the values passed to the data constructor.
+The best solution to a great many newtype problems, I believe, is creating a data model where there is a *true* isomorphism between the entity modeled by our data and the values passed to the data constructor.
 
-That is, there exists no regions in our data's state space which correspond to invalid states.
+That is, creating a data model such that there exists no regions in our data's state space which correspond to invalid states.
 
-Email is a simple example, because there are [well-defined models](http://tools.ietf.org/html/rfc5322#section-3.4) for what constitutes a data model, which are straightforwardly if tediously translated into data declarations.
+Email is a simple example, because there are [well-defined models](http://tools.ietf.org/html/rfc5322#section-3.4) for what constitutes a data model, which can be translated into data declarations in straightforward, if tedious fashion.
 
-(To some extent, it's a failure of most languages I know that such specifications cannot be easily translated into code without any tedious boilerplate.)
+(To some extent, it's a failure of most languages I know that such specifications cannot be easily translated into code without tedious boilerplate!)
 
-When our data declaration precisely fits our data model specification, there's no need for smart constructors, and no need for newtypes. There's far fewer ways that code can go wrong, and because our domain model is captured precisely by our data model, we can transform that data model in ways that make semantic sense.
+When our data declaration precisely fits our data model specification, there's no need for smart constructors, and no need for newtypes. There's far fewer ways that code can go wrong, and because our domain model is captured precisely by our data model, we can transform that data model in ways that make semantic sense (e.g. transforming just the name part of an email, since we're now in the realm of structured data).
 
 ## Summary
 
 As I've explained in this blog post, I don't *really* hate newtypes. I think they're very useful, and I *do* use them, because they make it more difficult for my programs to go wrong.
 
-Ultimately, however, I think a lot of problems solved with newtypes (modeling coordinates, positions, emails, etc.) are better solved by more precise data modeling. By making our programs more honest about the fact that, for example, strings and emails are *not* isomorphic.
+Ultimately, however, I think a lot of problems solved with newtypes (modeling coordinates, positions, emails, etc.) are better solved by more precise data modeling. That is, by making our programs stop *lying* about isomorphisms.
 
-Precision may be tedious due to limitations of the language we work in, but even more tedious is debugging broken code.
+Precision may be tedious due to limitations of the languages we work in, but honestly, what's more tedious than debugging broken code?
