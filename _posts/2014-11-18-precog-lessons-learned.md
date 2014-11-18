@@ -74,7 +74,7 @@ No single mistake was fatal. Indeed, the history of every successful startup is 
 
 Probably the single most important lesson I learned from Precog is that you need to apply *super-human focus* to solving an extremely *well-defined pain* held by an extremely *well-defined market*.
 
-Make your solution so impossibly good that no one who has the pain would ever consider using anything else. If you don't have the resources to do that, it means the pain or the market aren't focused enough.
+Make your solution so *impossibly good* that no one who has the pain would even *consider* using anything else. If you don't have the resources to do that, it means you need more focus.
 
 At Precog, we were building a very broad platform to solve a huge range of use cases. The reasons why this strategy doesn't work so well are pretty obvious in retrospect:
 
@@ -94,9 +94,11 @@ What I now know is that there is a *good* way to be disruptive, and a *bad* way:
  * **Good Disruption**. Your solution solves some aspect of a problem *so astoundingly well*, that a segment of users would tolerate many other deficiencies in order to benefit from your solution. An example is Google Docs: it gets collaboration so phenomenally right, a segment of users put up with a laundry list of deficiencies about as big as the feature list in Microsoft Word.
  * **Bad Disruption**. To adopt your solution, users must be completely re-educated, or they must completely rip out and replace parts of their existing solution, or your solution doesn't easily fit with all the other pieces of the bigger picture. Note: it doesn't matter how technologically or architecturally or philosophically superior your solution is &mdash; all these forms of disruption are bad and will impair your business (albeit, not necessarily kill it).
 
-At Precog, you had to learn a new query language called Quirrel, which was a brilliant piece of work and highly acclaimed... by those who took the time to learn it, anyway. Beyond that, you also had to copy all your data to our cloud analytics platform, and *then* learn out our tools and APIs.
+At Precog, you had to learn a new query language called *Quirrel*, which was a brilliant piece of work and highly acclaimed... by those who took the time to learn it, anyway.
 
-That's an example of both good and bad disruption. Strive to be the former, not the latter.
+Beyond that, you had to copy all your data to our cloud analytics platform, and learn our tools and APIs.
+
+That's an example of both good and bad disruption. Strive to be the former, *not* the latter.
 
 Now, if you really *have* to be disruptive along both dimensions (and you probably *don't*!), then you need to combine either high usability or deep pain (ideally both) with the open source model. That combination has proven a fairly reliable way to introduce "disruptively disruptive" solutions to the market, but it slows the business down by *years* (see Hadoop, MongoDB, Neo4j, etc.).
 
