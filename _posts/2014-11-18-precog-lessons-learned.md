@@ -116,7 +116,7 @@ I now believe that your *game plan* should be *unfundable*. If you tell an inves
 
 It seems pretty obvious, in retrospect, as there are plenty of examples: if Facebook had tried to be the social network for the world, they'd be a footnote in history. Instead, they executed on an unfundable game plan (social network for a college), and are now doing nearly $10B in annual revenue.
 
-Yes, have a big vision that gets investors excited, and makes you want to get in the morning. But keep your game plan *unfundable*: small and immediate, focused not on the billion dollar idea, but on producing something that someone somewhere gives a shit about.
+Yes, have a big vision that gets investors excited, and makes you want to get up in the morning. But keep your game plan *unfundable*: small and immediate, focused not on the billion dollar idea, but on producing something that someone somewhere gives a shit about.
 
 Succeeding *there* will give you the traction necessary to go after that billion dollar idea.
 
