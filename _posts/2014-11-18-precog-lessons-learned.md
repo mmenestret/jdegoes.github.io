@@ -18,7 +18,7 @@ Before I graduated high school, I had developed and sold no less than three soft
 
 During college, I co-founded GameInstitute (as well as a competitor!), and wrote curriculum and taught classes in everything from artificial intelligence to game mathematics. I went on to found N-Brain, where I funded and helped build a 400K LOC collaborative IDE for software developers.
 
-In between and sometimes during these adventures, I managed to find time to consult for dozens of companies (mostly contract software development) and work for a few large ones.
+Between and sometimes during these adventures, I managed to find time to consult for dozens of companies (mostly contract software development) and work for a few large ones.
 
 I got sucked into the Valley in 2009, when I went to work as VP of Engineering for SocialMedia.com during their reboot due to the collapse of independent Facebook ad networks. 
 
@@ -108,13 +108,15 @@ Billion dollar tech companies have massive sales, marketing, support, and engine
 
 The billion dollar idea behind Precog was to become the data analytics infrastructure powering all business applications and serving up all manner of insights to the users of those applications across all domains.
 
-That's a big, exciting, bold vision, which in the end proved too difficult to execute on.
+That's a big, exciting, bold vision. In the end, it proved too difficult to execute on.
 
 I now believe that your *game plan* should be *unfundable*. If you tell an investor what *you're actually doing*, and they tell you, "that's not a standalone business," then there's a good chance you're on the right track.
 
-It seems pretty obvious, in retrospect, as there are plenty of examples: if Facebook had tried to be the social network for the world, they'd be a footnote in history.
+It seems pretty obvious, in retrospect, as there are plenty of examples: if Facebook had tried to be the social network for the world, they'd be a footnote in history. Instead, they executed on an unfundable game plan (social network for a college), and are now doing nearly $10B in annual revenue.
 
-Yes, have a big vision that investors get excited about and that makes you want to get in the morning. But keep your game plan *unfundable*: small and immediate, focused on not the billion dollar idea, but producing something that someone somewhere gives a shit about. Succeeding there will give you the traction necessary to go after that billion dollar idea.
+Yes, have a big vision that gets investors excited, and makes you want to get in the morning. But keep your game plan *unfundable*: small and immediate, focused not on the billion dollar idea, but on producing something that someone somewhere gives a shit about.
+
+Succeeding *there* will give you the traction necessary to go after that billion dollar idea.
 
 ### 4. Choose a Right-Sized Problem
 
