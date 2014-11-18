@@ -161,7 +161,7 @@ I've seen firsthand how destructive that pattern is to becoming *phenomenally* g
 
 In the quest for product / market fit, one of your most powerful weapons is the word *no*. As in, *No*, we're not going to add that feature. *No*, your use case isn't a fit for our product. *No, no, no!*
 
-To become great, truly great, at something, you have to accept being terrible a lot of other stuff (at least initially).
+To become great, truly great, at something, you have to accept being terrible at a lot of other stuff (at least initially).
 
 That doesn't mean you have a license to ignore prospects or customers. On the contrary, you have to pay extreme attention to feedback, who it comes from, how big the pain is, and how deep the pockets are. But you have to pick and choose your battles, and saying no *a lot* will give you the ability to say *yes* to the one or two things that can move the needle.
 
