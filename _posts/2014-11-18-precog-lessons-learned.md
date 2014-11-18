@@ -167,7 +167,9 @@ That doesn't mean you have a license to ignore prospects or customers. On the co
 
 ### 7. Choose Investors Carefully
 
-At Precog, the reason we weren't able to raise a bridge round was because of negative signaling around one investor's refusal to participate (and of course they had no obligation to participate). This same investor also inadvertently harmed our fund-raising efforts by giving erroneous information to third-party investors, as well as painting our company in a negative light.
+At Precog, the reason we weren't able to raise a bridge round was because of negative signaling around one investor's refusal to participate (and of course they had no obligation to participate).
+
+This same investor also inadvertently harmed our fund-raising efforts by giving erroneous information to third-party investors, thus painting our company in a negative light.
 
 With a bridge round, I can't guarantee the outcome would have been any different, but I do feel we had an excellent shot at hitting at least $1M in ARR on a relatively conservative bridge.
 
