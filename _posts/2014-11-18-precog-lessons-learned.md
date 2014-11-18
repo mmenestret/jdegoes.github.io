@@ -206,17 +206,17 @@ I've pitched to most of the top-tier VC firms, and met some of the most famous p
 
 I have stories of warmth and intelligence and stories of stupidity and pomposity.
 
-But if there's one thing I've learned from all this, it's that there's no such thing as an all-knowing oracle. No one really knows which paths will lead to success, and which to failure. 
+But if there's one thing I've learned from all this, it's that there's no such thing as an all-knowing oracle. No one *really* knows which paths will lead to success, and which to failure. 
 
-Mentors, even those from the same industry, often fiercely disagree with each other. Investors, including venture capitalists, have no idea why they do or do not invest. While they sometimes give reasons, those reasons are made up after the fact, which is why they're usually inconsistent with other investments.
+Mentors, even those from the same industry, often *fiercely* disagree with each other. Investors, including venture capitalists, have *no idea* why they do or do not invest. While they sometimes give reasons, those reasons are made up after the fact, which is why they're usually inconsistent with other investments.
 
 Finally, ideas that seem ridiculously stupid (like, "We're gonna create an app that lets you share touched-up photos with your friends!", or "We're gonna help people rent out their spare rooms!") can sometimes pan out in a big way.
 
-There's a lesson in all of this: listen to everyone, and take all criticism to heart, because no point of view is *entirely* wrong, There's a kernel of truth in everything.
+There's a lesson in all of this: listen to everyone, and take all criticism to heart, because no point of view is *entirely* wrong. There's a kernel of truth in everything.
 
 But at the end of the day, realize that no one *really* knows anything. There's no wizard behind the curtain.
 
-It's up to *you* to become master of your business, to know it so thoroughly you stop looking for that all-knowing oracle who can help you guide your business to success.
+It's up to *you* to become master of your business, to become that oracle who can help you guide your business to success.
 
 ### 10. Don't Let Failure Destroy You
 
@@ -227,7 +227,7 @@ I've seen firsthand some of the fallout:
 * A former mentor studiously avoided me and couldn't even make eye-contact when we ran into each other at tech functions. It was like I had the plague, and it might be contagious, so they had to keep their distance.
 * I ran into a Precog investor on the street, and the investor stopped me, and accused me of being a quitter, insisting that if I *really* believed in the company, I would have found a way to make the bridge round happen.
 * One investor whom I've never met or even exchanged emails with told a friend of mine, *"I'd never invest in any company that John De Goes was a part of."* Hmmm, OK. 
-* Several fellow entrepreneurs whom I knew well from the Precog days couldn't even be bothered to return emails. I'm not one of the cool kids anymore.
+* Several fellow entrepreneurs whom I knew well from the Precog days couldn't even be bothered to return my emails. I'm not one of the cool kids anymore.
 
 Intellectually, I know that even if you do *a lot* of things right, that doesn't mean you will succeed. There's a large element of chance, and failure is something that *every* entrepreneur may have to contend with.
 
@@ -243,8 +243,8 @@ Good thing we entrepreneurs were born to do the impossible, right? Or at least, 
 
 While things didn't turn out the way I hoped for Precog, I wouldn't take back the experience for anything. 
 
-Our life experiences mold us into the people we are. I learned so much over such a short span of time, and it's fundamentally changed the way I think about business and look at the world.
+Our life experiences mold us into the people we become. I learned so much over such a short span of time, and it's fundamentally changed the way I think about business and look at the world.
 
-I will be taking all of these lessons and many others with me in my next great adventure.
+I will be taking all of these lessons and many others with me in my next great adventure. And some years down the road, I hope I'm lucky enough to be able to write *another* post like this one, and reflect on all the *new* lessons I've learned.
 
-And some years down the road, I look forward to writing another post like this one, where I can reflect on all the *new* lessons I've learned.
+Until *then*, it's time for me to show that concrete who's boss...
