@@ -235,7 +235,7 @@ We'll never know, because they never got a last-minute miracle.
 
 Emotionally, however, scraping off that bloody pulp from the concrete and trying to turn it into something resembling a normal human being is a difficult undertaking.
 
-Good thing we entrepreneurs were born to do the impossible, right? Or at least, born crazy enough to *think* so, wh ich is sometimes all that matters.
+Good thing we entrepreneurs were born to do the impossible, right? Or at least, born crazy enough to *think* so, which is sometimes all that matters.
 
 ## Continuing the Journey
 
