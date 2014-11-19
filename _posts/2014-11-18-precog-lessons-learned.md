@@ -245,6 +245,6 @@ While things didn't turn out the way I hoped for Precog, I wouldn't take back th
 
 Our life experiences mold us into the people we become. I learned so much over such a short span of time, and it's fundamentally changed the way I think about business and look at the world.
 
-I will be taking all of these lessons and many others with me in my next great adventure. And some years down the road, I hope I'm lucky enough to be able to write *another* post like this one, and reflect on all the *new* lessons I've learned.
+I will be taking all of these lessons and many others with me into my next great adventure. And some years down the road, I hope I'm lucky enough to be able to write *another* post like this one, and reflect on all the *new* lessons I've learned.
 
 Until *then*, it's time for me to show that concrete who's boss...
