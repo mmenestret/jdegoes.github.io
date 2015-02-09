@@ -98,7 +98,7 @@ With this bag of tricks under your belt, you're ready to bring some good ol' fas
 
 Go forth on Twitter, Internet forums, Facebook, wherever else you hang out online, and leverage what you've learned here to incite hatred and piss off everyone.
 
-And remember, don't forget to retweet, like, share, and link to others who are bravely committed to our cause. A simple retweet an inflammatory remark takes almost *no* time, but the effects can be felt around the world.
+And remember, don't forget to retweet, like, share, and link to others who are bravely committed to our cause. A simple retweet of an inflammatory remark takes almost *no* time, but the effects can be felt around the world.
 
 Good luck, and see you in the Internet's next era of hatemongering!
 
