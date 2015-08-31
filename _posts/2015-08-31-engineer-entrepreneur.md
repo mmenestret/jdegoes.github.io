@@ -71,7 +71,7 @@ You might learn that hospitals are looking for better reporting on patient medic
  * Medical records aren't stored in one format, they're stored in literally thousands of totally incompatible formats.
  * Medical record systems are fragmented, incompatible, and hospitals are sometimes using versions of software that pre-date the Internet.
  * Hospitals don't standardize on terminology; so what one hospital calls *gender* another hospital calls *sex*.
- * Access and storage of medical data is regulated by HIPPA and other laws, as well as hospital-specific policies.
+ * Access and storage of medical data is regulated by HIPAA and other laws, as well as hospital-specific policies.
 
 Your first instinct to uncovering this mess is probably repulsion (as it should be!). But there are two quite different ways you can respond:
 
@@ -92,7 +92,7 @@ But one of the most important lessons you can learn is that *the customer doesn'
 
 A spaghetti-code PHP 3.0 application that uses text files for its database may be an engineer's worst nightmare.  But customers care only about the surface area they interact with: elegant architecture, beautiful abstractions, brilliant programming languages, and world-class libraries don't mean squat.
 
-*You and I know* that all these things have an affect on long-term maintainability, ease of adding new members to the team, testability of the code, defect rates, engineer satisfaction, and lots more. And I don't want to discount any of these measures, just to emphasize the following: your business will succeed or fail *not based on the technology*, but based on how well it solves customer pain (which is *almost* completely independent of the technology!).
+*You and I know* that all these things have an effect on long-term maintainability, ease of adding new members to the team, testability of the code, defect rates, engineer satisfaction, and lots more. And I don't want to discount any of these measures, just to emphasize the following: your business will succeed or fail *not based on the technology*, but based on how well it solves customer pain (which is *almost* completely independent of the technology!).
 
 If anything, you are likely to become *too distracted* by technology, so much so you may forget the customer in your quest to build something really cool.
 
