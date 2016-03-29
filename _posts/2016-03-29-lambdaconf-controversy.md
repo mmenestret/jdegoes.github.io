@@ -62,7 +62,7 @@ Second, looking on Twitter and elsewhere, I've seen lots of stuff like this:
 
  * I've seen a white male try to explain to a woman speaker why her reasons for supporting our policy were wrong;
  * I've seen a white male unfollow a woman and former colleague who voiced support for our policy (she left Twitter as a result);
- * I've seen a white male argue with a Nigerian that his support for our policy was wrong.
+ * I've seen a white male argue with a Nigerian person that his support for our policy was wrong.
 
 I can't explain any of this unless the controversy is *really* about something else.
 
@@ -194,7 +194,7 @@ You might lose *everything*.
 
 I'm sure many will say, you deserve all that and more if you're a bad person. But the thing is, *even if you agree with this*, you have to acknowledge that social media makes *mistakes* (just look at the social media hysteria following any terrorist attack!).
 
-Social media is often a platform for false, distorted, and misrepresented information. There's irrational groupthink and [perverse game mechanics](http://hintjens.com/blog:114).
+Social media is often a platform for false, distorted, and misrepresented information. There's irrational groupthink and [perverse game mechanics](http://hintjens.com/blog:114) (see the end).
 
 I don't like that. I *really* don't like that.
 
