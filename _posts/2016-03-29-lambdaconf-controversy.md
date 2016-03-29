@@ -126,7 +126,7 @@ Guilt by association arguments are not scientific or objective — they're subje
 
 ## Speak \/ Attend
 
-LambdaConf doesn't draw a distinction between volunteer, attendee, or speaker. They are all required to be uphold the pledge, and the safe and trust exceptions apply equally.
+LambdaConf doesn't draw a distinction between volunteer, attendee, or speaker. They are all required to be uphold the pledge, and the safety and trust exceptions apply equally.
 
 Many of the arguments I've seen for denying someone an opportunity to speak apply equally to attendees.
 
