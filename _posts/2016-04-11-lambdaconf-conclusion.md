@@ -56,11 +56,13 @@ If you want to help us figure out who we should provide *marketing services* to,
 
 #### LambdaConf isn't going to adopt xyist policies.
 
-The view that only straight white males have the emotional resiliency to occupy the same building as someone with offensive views is inherently *xyist* (see the appendix). We know women, people of color, and others who are offended by this view.
+The view that only straight white males have the ability and willingness to voluntarily occupy the same building as someone with known offensive views is inherently *xyist* (see the appendix). We know women, people of color, and others who are offended by this view, and who prefer the policies we have chosen for our conference to other possible policies.
 
-There are people of *all* genders, colors, ages, sizes, sexual-orientations, and every other demographic who may be too emotionally threatened to occupy the same building as others with offensive views.
+There are people of *all* genders, colors, ages, sizes, sexual-orientations, gender-orientations, religions, and every other demographic who may be too emotionally threatened to voluntarily occupy the same building as someone with known offensive views.
 
-The fear cuts across *every* demographic. We recognize this fact, we empathize deeply, but we also understand that any choice will alienate some people from all demographics, and we have decided to draw our line at professional ethics.
+The fear cuts across *every* demographic. We recognize this fact, we empathize deeply, but we also recognize that any choice will alienate some people from across *all* demographics, and we have decided to draw our line at professional ethics.
+
+**EDIT**: *To clarify, we will not adopt a policy which assumes that, in the presence of a strictly enforced code of conduct, any group of people is more or less able and willing to voluntarily occupy the same building as someone with known offensive views (this is a statement on what we will do or not do, not a statement on what is right or wrong).*
 
 #### LambdaConf's talk selection process will change next year.
 
@@ -88,6 +90,8 @@ And we're going to do it with the same kindness, compassion, and love that the c
 
 # Appendix
 
+**NOTE**: *This appendix is not a justification of our statement, only a collection of thoughts on the matter. We do not believe that our position is right *or* wrong. It is a subjective choice, influenced by the feedback we collected, and consistent with our goal to focus on functional programming while still having zero tolerance for any unkind behaviors at the conference, as defined by our code of conduct.*
+
 ## Types of Exclusion
 
 ![External Versus Internal Exclusion](/images/internal-external-exclusion.png)
@@ -102,33 +106,34 @@ LambdaConf is very *inclusive*. This choice, along with many others that we make
 
 ![Social Versus Professional](/images/social-versus-professional.png)
 
-We all have different levels of emotional comfort for different individuals. We'll tell some people our most intimate secrets. We don't even want to be in the same building with others.
+We all have different levels of comfort for engaging in various activities with different individuals. We'll tell some individuals our most intimate secrets, but we don't even want to be in the same building with other individuals.
 
-We think it's useful to divide these levels of comfort into social (the stuff we do for personal enjoyment) and professional (the stuff we do to earn a living).
+We think it's useful to divide activities into social activities, which we do for personal enjoyment, and professional activities, which we do to earn a living or enhance our ability to earn a living.
 
 Our social lives give us the freedom to engage with whoever we want, for whatever reasons we want.
 
-Our professional lives, on the other hand, often demand (or benefit from) a certain ability to engage in professional activities with other professionals, even if we would never socialize with them on a personal level, and even if we find their personal views offensive.
+Our professional lives, on the other hand, often demand (or benefit from) a certain ability to engage in professional activities with other professionals, even if we would never socialize with those individuals, and even if we find their personal views offensive. Establishing and enforcing a common set of professional ethics help us safely interact with one another in a professional setting.
 
 ## Assault
 
 ![Types of Assault](/images/types-of-assault.png)
 
-Some people will feel emotionally threatened in the presence of others with offensive views, even if those people are behaving well.
+We use the term "emotional assault" to refer *exclusively* to the very real and potentially harmful effects of being in the same vicinity as someone known to harbor offensive views, even if they are behaving themselves in absolute accordance with the code of conduct (which we assume, and which is an absolute *requirement* for participating in the conference in *any* capacity).
 
-This fact is very compelling for all of us, but we have realized something else: emotional assault is qualitatively different from both physical and verbal assault.
+Emotional assault is very real, and its existence grieves us, but we have realized something: emotional assault is *qualitatively* different from both physical and verbal assault:
 
-Physical and verbal assault can be measured and compared, and therefore regulated (not without some difficulty, of course). But emotional assault cannot be measured or compared, therefore it is not possible to regulate it in any principled way.
+ * Physical and verbal assault are external and observable by a third-party. The assaulter has direct control over whether the victim is assaulted.
+ * Emotional assault is internal and subjective, and cannot reliably be observed or measured by a third-party. Beyond keeping their views private (which is not sufficient in many cases), the assaulter has no direct control over whether the victim is assaulted, nor over the strength of that assault.
 
-If a conference gets into the business of banning people based on their predicted probability of causing emotional distress for expected attendees, then it's going to have to make some very subjective calls.
+In all the following cases, individuals may be emotionally assaulted, regardless of how well the assaulters are behaving themselves at a professional event:
 
- * Someone with progressive political views might feel emotionally threatened in the presence of rabid and well-known Trump supporters who are openly contemptuous of progressives in their personal lives.
- * People who are openly gay may feel emotionally threatened in the presence of fundamentalist Christians (let’s not forget the Bible says, "If a man also lie with mankind, as he lieth with a woman, both of them have committed an abomination: they shall surely be put to death; their blood shall be upon them.").
- * A devout Muslim might feel emotionally threatened in the presence of an atheist who (like some notable atheists) publicly claims to be morally and intellectually superior to theists.
+ * Someone with progressive political views might feel emotionally assaulted in the presence of rabid and well-known Trump supporters who are openly contemptuous of progressives in their personal lives.
+ * People who are openly gay may feel emotionally assaulted in the presence of openly fundamentalist Christians (let’s not forget the Bible says, "If a man also lie with mankind, as he lieth with a woman, both of them have committed an abomination: they shall surely be put to death; their blood shall be upon them").
+ * A devout Muslim might feel emotionally assaulted in the presence of an atheist who (like some notable atheists) openly claims in their personal lives to be morally and intellectually superior to theists.
 
-What is the depth of emotional assault in all these cases? How do you compare them? How do you decide who to allow into your space, and who to ban?
+The above individuals may experience harmful effects as a result of the assault. How do you decide who to allow into your space, and who to ban?
 
-If you go down this path, you have to make subjective judgment calls about whose pain is greater or more important to you. Some conferences can and should do this, but we wish to keep our conference focused on functional programming (with a strong and well-enforced professional code of ethics).
+If you go down this path, you have to make subjective judgment calls about whose pain is greater or more important to you. Some conferences can and should do this, but we wish to keep our conference focused on functional programming, and rely on a strong and well-enforced professional code of ethics to ensure all attendees are treated exceedingly well.
 
 ## Xyism
 
