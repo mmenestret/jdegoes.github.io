@@ -90,7 +90,7 @@ And we're going to do it with the same kindness, compassion, and love that the c
 
 # Appendix
 
-**NOTE**: *This appendix is not a justification of our statement, only a collection of thoughts on the matter. We do not believe that our position is right *or* wrong. It is a subjective choice, influenced by the feedback we collected, and consistent with our goal to focus on functional programming while still having zero tolerance for any unkind behaviors at the conference, as defined by our code of conduct.*
+**NOTE**: *This appendix is not a justification of our statement, only a collection of thoughts on the matter. We do not believe that our position is right or wrong. It is a subjective choice, influenced by the feedback we collected, and consistent with our goal to focus on functional programming while still having zero tolerance for any unkind behaviors at the conference, as defined by our code of conduct.*
 
 ## Types of Exclusion
 
