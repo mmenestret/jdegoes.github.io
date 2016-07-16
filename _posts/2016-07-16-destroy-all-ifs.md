@@ -271,3 +271,39 @@ both easier to reason about and more generic.
 So what are you waiting for?
 
 Go sign the [Anti-IF Campaign](http://antiifcampaign.com) today. :)
+
+# Addendum
+
+After writing this post, it has occurred to me the problem is larger than just
+boolean values.
+
+The problem is fundamentally a *protocol* problem: booleans (and other types) are
+often used to encode program semantics.
+
+Therefore, in a sense, a boolean is a serialization protocol for communicating
+intention from the caller site to the callee site.
+
+At the caller site, we serialize our intention into a bit (or other data value),
+pass it to the function, and then the function deserializes the value into an
+intention (a chunk of code).
+
+Boolean blindness errors are really just *protocol errors*. Someone screwed up
+on the serialization or deserialization side of things; or maybe just caller
+or callee misunderstood the protocol and thought different bits had different
+meanings.
+
+In functional programming, the use of lambdas allows us to propagate not merely
+a *serialized* version of our intentions, but our *actual* intentions! In other
+words, lambdas let us pull the intentions out of the callee site, and into the
+caller site, since we can propagate them directly without serialization.
+
+In older programming languages, this could not be done: there was no way to ship
+semantics (a hunk of code) from one part of the program to another. Today's
+programming languages support this style of programming (to varying degrees),
+and functional programming languages encourage it.
+
+Inversion of control, in this limited sense, is about removing the possibility
+of a protocol error by giving the caller direct control over semantic knobs
+exposed by the callee.
+
+Kinda cool, eh?
