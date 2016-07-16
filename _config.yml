@@ -3,7 +3,7 @@ text_title:       John A De Goes
 tagline:          ramblings of a geek
 description:      The home on the web for technologist John A. De Goes.
 # Your site's domain goes here. Leave localhost server or blank when working locally.
-url:              
+url:
 
 # Owner/author information
 owner:
@@ -13,27 +13,27 @@ owner:
   email:          john@degoes.net
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        jdegoes
-  facebook:       
+  facebook:
   github:         jdegoes
   linkedin:       jdegoes
-  instagram:      
-  lastfm:         
-  tumblr:         
+  instagram:
+  lastfm:
+  tumblr:
   disqus:         johnadegoes
   # For Google Authorship https://plus.google.com/authorship
-  google_plus:    
+  google_plus:
 
 excerpt_separator: yabber jabber wibber wabber
 
 # Analytics and webmaster tools stuff goes here
 google:
   analytics:
-    id:           UA-46825055-1 
+    id:           UA-46825055-1
     url:          degoes.net
 
-google_verify:      
+google_verify:
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
-bing_verify:        
+bing_verify:
 
 # Links to include in top navigation
 # For external links add external: true
@@ -50,7 +50,7 @@ links:
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/Denver
 future:      true
-pygments:    true
+highlighter: rouge
 markdown:    kramdown
 
 # https://github.com/mojombo/jekyll/wiki/Permalinks
@@ -64,7 +64,7 @@ kramdown:
   use_coderay: false
 
   coderay:
-    coderay_line_numbers: 
+    coderay_line_numbers:
     coderay_line_numbers_start: 1
     coderay_tab_width: 4
     coderay_bold_every: 10
