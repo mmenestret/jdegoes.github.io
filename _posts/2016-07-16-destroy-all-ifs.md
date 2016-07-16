@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "Destroy All Ifs — A Perspective from Functional Programming"
-description:  "a"
+description:  "Replace conditionals with lambdas for simpler code that's more powerful"
 category:     articles
 tags:         [fp, functional programming, conditionals, if, anti-if, booleans]
 ---
