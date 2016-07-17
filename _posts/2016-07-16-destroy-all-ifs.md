@@ -60,7 +60,7 @@ It's no wonder that conditionals (and with them, booleans) are so widely despise
 # A Closer Look
 
 In an object-oriented programming language, it's generally considered a good
-practice to [replace conditionals with polymorphism](https://sourcemaking.com/refactoring/replace-conditional-with-polymorphism).
+practice to [replace conditionals with polymorphism](http://refactoring.com/catalog/replaceConditionalWithPolymorphism.html).
 
 In a similar fashion, in functional programming, it's often considered good
 practice to replace boolean values with algebraic data types.
