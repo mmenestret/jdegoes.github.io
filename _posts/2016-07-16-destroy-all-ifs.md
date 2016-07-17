@@ -218,7 +218,7 @@ dryRun :: Announcer
 dryRun = const (putStrLn "Dry run completed, no errors.")
 
 forReal :: Announcer
-forReal = putStrLn (A.encode pkg)
+forReal = putStrLn <<< A.encode
 
 publish :: PublishOptions -> Announcer -> IO ()
 publish options announce = unsafePreparePackage options >>= announce
