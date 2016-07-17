@@ -172,8 +172,8 @@ match :: String -> (String -> Bool) -> String -> Bool
 Now you can test strings like so:
 
 ```
-caseInsensitive match "foo" eq "foobar" -- false
-caseInsensitive match "fOO" contains "foobar"
+caseInsensitive match "foo" eq       "foobar" -- false
+caseInsensitive match "fOO" contains "foobar" -- true
 ```
 
 Of course, now the function `match` has been simplified so much, it no longer
@@ -271,6 +271,8 @@ both easier to reason about and more generic.
 So what are you waiting for?
 
 Go sign the [Anti-IF Campaign](http://antiifcampaign.com) today. :)
+
+*P.S.* I'm just joking about the Anti-IF campaign (but it's kinda funny).
 
 # Addendum
 
