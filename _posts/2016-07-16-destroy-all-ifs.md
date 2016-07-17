@@ -212,7 +212,7 @@ Let's unify the two code branches by extracting out the options, and introducing
 a lambda to handle the different messages printed after package preparation:
 
 ```haskell
-type Announcer = String -> IO String
+type Announcer = String -> IO ()
 
 dryRun :: Announcer
 dryRun = const (putStrLn "Dry run completed, no errors.")
