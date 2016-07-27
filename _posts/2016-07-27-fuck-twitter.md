@@ -1,12 +1,12 @@
 ---
 layout:       post
-title:        "Twitter's Fucked: Five Ways the Product Is Broken"
+title:        "Twitter's Fucked"
 description:  "The Twitter product is defective, broken beyond all hope of repair"
 category:     articles
 tags:         [twitter, social media, harassment, trolls, free speech]
 ---
 
-Twitter's fucked.
+Twitter's in trouble.
 
 No, I'm not referring to the fact that Twitter's stock is worth a fraction of
 what it used to be. Or that its revenue growth is abysmal. Or that Pokemon GO
