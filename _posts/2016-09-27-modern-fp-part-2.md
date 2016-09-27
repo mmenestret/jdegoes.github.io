@@ -91,7 +91,7 @@ performance can be optimized via analysis and transformation.
 
 On the second benefit, I have previously discussed optimization of programs via
 [free applicatives](https://www.youtube.com/watch?v=H28QqxO7Ihc), and I also
-recently demonstrated a [mocking library](https://github.com/slamdata/purescript-freemock)
+recently demonstrated a [mocking library](https://github.com/slamdata/purescript-mockfree)
 that exposes composable, type-safe combinators for building expectations &mdash;
 something not demonstrated before and apparently impossible using monad
 transformers.
