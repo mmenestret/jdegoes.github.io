@@ -200,7 +200,7 @@ type TransferResult = Either[Error, (From[Amount], To[Amount])]
 trait Banking[F[_]] {
   def accounts: F[NonEmptyList[Account]]
   def balance(account: Account): F[Amount]
-  def transfer(amount: Amount, from: From[Account], to: From[Account]): F[TransferResult]
+  def transfer(amount: Amount, from: From[Account], to: To[Account]): F[TransferResult]
   def withdraw(amount: Amount): F[Amount]
 }
 {% endhighlight %}
