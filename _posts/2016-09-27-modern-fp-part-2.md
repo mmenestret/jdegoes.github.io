@@ -85,7 +85,9 @@ Free monads have none of these drawbacks:
 interpreter does not have to produce the result of the operation being
 interpreted (or any result at all, in fact).
 2. Free monads permit unlimited introspection and transformation of the structure
-of your program.
+of your program (*EDIT*: up to the information-theoretic limit; see [my talk on
+Free applicatives](https://www.youtube.com/watch?v=H28QqxO7Ihc), which support
+sequential code just like free monads but allow unbounded peek-ahead).
 3. Free monads allow minimal specification of each semantic layer, since
 performance can be optimized via analysis and transformation.
 
