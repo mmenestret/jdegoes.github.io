@@ -242,7 +242,7 @@ instance bankingFree :: (Banking f) => Banking (Free f) where
   withdraw a = liftF (withdraw a)
 {% endhighlight %}
 {% highlight scala %}
-implicit def BankingFree[F[_]](implicit F: Banking[F]): Baking[Free[F, ?]] =
+implicit def BankingFree[F[_]](implicit F: Banking[F]): Banking[Free[F, ?]] =
   new Banking[Free[F, ?]] {
     def accounts: Free[F, NonEmptyList[Account]] = Free.liftF(F.accounts)
     def balance(account: Account): Free[F, Amount] = Free.liftF(F.balance(account))
