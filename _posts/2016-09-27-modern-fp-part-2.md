@@ -259,14 +259,14 @@ domain, without tangling other concerns such as banking protocols, socket
 communication, and logging:
 
 {% highlight haskell %}
-example :: forall f. (Inject Banking f) => Free f Amount
+example :: forall f. (Inject BankingF f) => Free f Amount
 example = do
   as <- accounts
   b  <- balance (head as)
   return b
 {% endhighlight %}
 {% highlight haskell %}
-def example[F[_]: Inject[Banking, ?]]: Free[F, Amount] =
+def example[F[_]: Inject[BankingF, ?]]: Free[F, Amount] =
   for {
     as <- F.accounts
     b  <- F.balance(as.head)
