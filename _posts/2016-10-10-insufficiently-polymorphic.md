@@ -76,10 +76,10 @@ into the code, hiding the fact that the second parameter and return values are
 lists:
 
 {% highlight haskell %}
-foo :: forall a b. List a -> (a -> b) -> (b -> b) -> b -> b
+foo :: forall a b. List a -> (a -> b) -> (b -> b -> b) -> b -> b
 {% endhighlight %}
 {% highlight scala %}
-def foo[A, B](as: List[A], b: B, ab: A => B, bb: B => B): B
+def foo[A, B](as: List[A], b: B, ab: A => B, bbb: B => B => B): B
 {% endhighlight %}
 
 There are considerably fewer ways to implement this function. The function can
