@@ -540,3 +540,6 @@ But there's still a lot of development possible in our current programming
 languages, and lots of people are working in the space.
 
 Stay tuned for more, and please share your own thoughts below.
+
+**EDIT**: Please see [this repository](https://github.com/notxcain/onion-architecure)
+for an example implementation in Scala/Cats constructed by [Denis Mikhaylov](https://twitter.com/notxcain).
