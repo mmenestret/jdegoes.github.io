@@ -477,10 +477,11 @@ Using this approach, we can construct more complex descriptions of effectful
 programs, such as this example:
 
 {% highlight scala %}
-def infiniteHelloWorld: ConsoleIO = WriteLine("Hello World", program)
+def infiniteHelloWorld: ConsoleIO = WriteLine("Hello World", infiniteHelloWorld)
 {% endhighlight %}
 
-This structure describes a program that writes "Hello World" an infinite number
+If we introduced a "thunk" to avoid blowing the stack during construction, this
+structure would describe a program that writes "Hello World" an infinite number
 of times to the console. Infinite programs like this aren't that useful, but
 we can fix this problem by adding another term to `ConsoleIO`, one which allows
 program termination:
