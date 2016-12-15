@@ -83,7 +83,7 @@ A canonical example of the power of functional programming is the following
 generic sort function:
 
 {% highlight scala %}
-def sort[A <% Ordered[A]](as: List[A]): List[A] = as match {
+def sort[A: Ordering](as: List[A]): List[A] = as match {
   case Nil => Nil     
   case a :: as =>        
     val (before, after) = as partition (_ < a)
