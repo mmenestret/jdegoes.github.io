@@ -21,6 +21,7 @@
 <div id="main" role="main" itemprop="mainContentOfPage" itemscope itemtype="http://schema.org/Blog">
   <div class="article-author-side">
     {% include _author-bio.html %}
+    {% include _carbon.html %}
   </div>
   <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
     <h1 itemprop="name">{{ page.title }}</h1>
@@ -56,7 +57,7 @@
     </ul>
     <hr />
   </div><!-- /.related-articles -->{% endif %}
-  
+
   {% if site.owner.disqus %}
   <div class="disqus">
     <div id="disqus_thread"></div>
@@ -74,13 +75,13 @@
     <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
   </div>
   {% endif %}
-  
+
   <footer>
     {% include _footer.html %}
   </footer>
 </div><!-- /.footer-wrap -->
 
-{% include _scripts.html %}	        
+{% include _scripts.html %}
 
 </body>
 </html>
