@@ -586,7 +586,7 @@ We can add such a map function directly to `ConsoleIO`:
 
 {% highlight scala %}
 sealed trait ConsoleIO[A] {
-  def map[B](f: A => B): Console[B] = Map(this, f)
+  def map[B](f: A => B): ConsoleIO[B] = Map(this, f)
 }
 final case class WriteLine[A](line: String, then: ConsoleIO[A]) extends ConsoleIO[A]
 final case class ReadLine[A](process: String => ConsoleIO[A]) extends ConsoleIO[A]
@@ -594,18 +594,18 @@ final case class EndWith[A](value: A) extends ConsoleIO[A]
 final case class Map[A0, A](v: ConsoleIO[A0], f: A0 => A) extends ConsoleIO[A]
 {% endhighlight %}
 
-Now given any `Console[A]`, we can map it into a `Console[B]`, given a function
+Now given any `ConsoleIO[A]`, we can map it into a `ConsoleIO[B]`, given a function
 `A => B`. So we can write a new program, `userNameLenProgram`, which computes the
 number of characters in the user's name, by writing the following snippet:
 
 {% highlight scala %}
-def userNameLenProgram: Console[Int] = userNameProgram.map(_.length)
+def userNameLenProgram: ConsoleIO[Int] = userNameProgram.map(_.length)
 {% endhighlight %}
 
 With the addition of `map`, the utility of `EndWith` has changed: we no longer
 need it to return a value from the program, because we can map whatever value
-we have to the return value. For example, if we have `Console[String]`, we can
-map that to `Console[Int]` by specifying a function `String => Int`.
+we have to the return value. For example, if we have `ConsoleIO[String]`, we can
+map that to `ConsoleIO[Int]` by specifying a function `String => Int`.
 
 However, `EndWith` could still be used to construct a "pure" program that performs
 no effects (which can be composed with other programs). So it's still useful,
