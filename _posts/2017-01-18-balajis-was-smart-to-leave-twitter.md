@@ -4,7 +4,7 @@ title:        "Balaji Srinivasan: Saying Goodbye to One of Twitter's Brightest"
 description:  "In an instant, @baljis deleted all of his tweets and left Twitter, which has left everyone wondering why."
 category:     articles
 tags:         [startups, entrepreneurs, twitter, social media]
-redirect_from: "/articles/balajis-was-smart-to-leave-twitter"
+redirect_from: "/articles/balajis-leaves-twitter"
 ---
 
 On January 13th, Balaji Srinivasan&mdash;a successful entrepreneur, a board
