@@ -32,7 +32,7 @@ unflattering tweets about both Trump and the FDA. Recode, [in much harsher words
 
 Personally, I have a different theory about why Balaji quit Twitter.
 
-Namely, he quit because [Twitter's fucked](/posts/fuck-twitter).
+Namely, he quit because [Twitter's fucked](/articles/fuck-twitter).
 
 The medium is custom-designed to signal virtue (and vice). If you aren't into
 either of those, then you can share links and cute cat pics, but that's about it.
