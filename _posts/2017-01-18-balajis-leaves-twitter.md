@@ -14,6 +14,7 @@ In their place, he posted a [single tweet](https://twitter.com/balajis/status/82
 to his 50,000 followers:
 
 > Don't argue on Twitter.
+> 
 > Build the future.
 
 Mr. Srinivasan is well-respected in Silicon Valley.
