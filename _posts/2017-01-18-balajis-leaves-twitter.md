@@ -18,23 +18,26 @@ to his 50,000 followers:
 
 Mr. Srinivasan is well-respected in Silicon Valley.
 
-He's smart, well-read, accomplished, and possesses a keen ability to see through
-bullshit. Yet Balaji retains an unspoiled passion for improving the human
+He's smart, knowledgable, accomplished, and possesses a keen ability to see
+through bullshit. Yet Balaji retains an unspoiled passion for improving the human
 condition through science and technology&mdash;a obvious theme of his [earlier
 startup](https://www.counsyl.com) in the health care space.
 
-When he quit Twitter, speculation abounded, but all discussions seemed to center
-on a rumor that Balaji was being [considered by Trump to head up the FDA](https://www.bloomberg.com/news/articles/2017-01-13/trump-said-to-consider-another-thiel-associate-to-lead-fda).
+Personally, since Balaji stumbled onto my own timeline, I've learned much from
+his tweets on technology, politics, and society.
+
+When Balaji quit Twitter, it was a shock to me and countless others. Speculation
+abounded, but all discussions seemed to center on a rumor that Balaji was being
+[considered by Trump to head up the FDA](https://www.bloomberg.com/news/articles/2017-01-13/trump-said-to-consider-another-thiel-associate-to-lead-fda).
 
 Gizmodo [speculated](http://gizmodo.com/why-did-trumps-top-fda-pick-delete-all-his-tweets-1791227569)
 that Mr. Srinivasan deleted his tweets because he had previously posted
-unflattering tweets about both Trump and the FDA. Recode, [in much harsher words](http://www.recode.net/2017/1/14/14276530/balaji-srinivasan-trump-fda-twitter-andreessen-horowitz), also argued that Balaji's outspoken criticism of the FDA was to blame.
+unflattering tweets about Trump. Recode, [in much harsher words](http://www.recode.net/2017/1/14/14276530/balaji-srinivasan-trump-fda-twitter-andreessen-horowitz), argued that Balaji's outspoken criticism of the FDA was to blame.
 
-Personally, I have a different theory about why Balaji quit Twitter.
+Personally, I have a different theory about why Balaji quit Twitter: he quit
+because [Twitter's fucked](/articles/fuck-twitter).
 
-Namely, he quit because [Twitter's fucked](/articles/fuck-twitter).
-
-The medium is custom-designed to signal virtue (and vice). If you aren't into
+The medium is custom-designed to signal virtue and vice. If you aren't into
 either of those, then you can share links and cute cat pics, but that's about it.
 
 In particular, if your goal is to inform and persuade, to use reason and data to
@@ -42,8 +45,8 @@ bring about the change you want to see in the world, then [long-form](https://ww
 living shit out of short-form.
 
 In what may be Balaji's smartest move to date, he's basically said he's done
-trying to change the world 140 characters at a time (which can't possibly work).
-Instead, he's going to build the future with his own two hands.
+trying to change the world 140 characters at a time (a strategy that can never
+work). Instead, he's going to build the future with his own two hands.
 
 People can talk trash to you on Twitter all day long, but it's impossible to
 argue with the enormous power of actual change. The real mystery is not why
