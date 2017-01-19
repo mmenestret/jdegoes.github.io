@@ -30,7 +30,7 @@ his tweets on technology, politics, and society.
 
 When Balaji quit Twitter, it was a shock to me and countless others. Speculation
 abounded, but all discussions seemed to center on a rumor that Balaji was being
-[considered by Trump to head up the FDA](https://www.bloomberg.com/news/articles/2017-01-13/trump-said-to-consider-another-thiel-associate-to-lead-fda).
+[considered by Trump to head up the FDA](https://www.bloomberg.com/news/articles/2017-01-13/trump-said-to-consider-another-thiel-associate-to-lead-fda), an idea I find [incredibly attractive](http://slatestarcodex.com).
 
 Gizmodo [speculated](http://gizmodo.com/why-did-trumps-top-fda-pick-delete-all-his-tweets-1791227569)
 that Mr. Srinivasan deleted his tweets because he had previously posted
