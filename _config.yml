@@ -8,8 +8,7 @@ url:
 # Owner/author information
 owner:
   name:           John A De Goes
-  avatar:         http://www.gravatar.com/avatar/6fbccc0537949767c52dfc210003ec9d.jpg?s=200&r=g&d=identicon
-  bio:            "I love startups, technology, and science. I write about geeky stuff. Mostly."
+  avatar:         /images/self-portrait.png  
   email:          john@degoes.net
   # Social networking links are used in author-bio sidebar. Update and remove as you like.
   twitter:        jdegoes
@@ -72,6 +71,3 @@ kramdown:
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
-
-gems:
-  - jekyll-redirect-from

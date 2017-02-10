@@ -6,10 +6,10 @@ tagline: Learn More
 tags: [about, john a. de goes, resume]
 modified: 1-2-2014
 image:
-  feature: texture-feature-02.jpg
+  feature: colorado-snow-2.jpg
 ---
 
-I'm an author, speaker, entrepreneur, and long-time software architect and engineer. I love startups, technology, science, software engineering, fitness, and my family.
+I'm a functional programming, author, speaker, entrepreneur, and long-time software architect and engineer. I love startups, technology, science, software engineering, fitness, and my family.
 
 In addition to my consulting business, I'm currently [CTO at SlamData](http://slamdata.com), a company building [cool open source software](http://github.com/slamdata) for NoSQL analytics.
 

@@ -13,12 +13,14 @@
 
 {% include _navigation.html %}
 
-{% if page.image.feature %}<div class="image-wrap">
+{% if page.image.feature %}
+<div class="image-wrap">
   <blink>
   <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
   {% if page.image.credit %}<span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>{% endif %}
   </blink>
-</div><!-- /.image-wrap -->{% endif %}
+</div><!-- /.image-wrap -->
+{% endif %}
 
 <div id="main" role="main"  itemprop="mainContentOfPage">
   <div class="article-author-side">

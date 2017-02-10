@@ -13,10 +13,14 @@
 
 {% include _navigation.html %}
 
-{% if page.image.feature %}<div class="image-wrap">
+{% if page.image.feature %}
+<div class="image-wrap">
+  <blink>
   <img src="{{ site.url }}/images/{{ page.image.feature }}" alt="{{ page.title }} feature image" itemprop="primaryImageOfPage">
   {% if page.image.credit %}<span class="image-credit">Photo Credit: <a href="{{ page.image.creditlink }}">{{ page.image.credit }}</a></span>{% endif %}
-</div><!-- /.image-wrap -->{% endif %}
+  </blink>
+</div><!-- /.image-wrap -->
+{% endif %}
 
 <div class="article-author-side">
   {% include _author-bio.html %}
@@ -38,9 +42,6 @@
     <article itemscope itemtype="http://schema.org/BlogPosting" itemprop="blogPost">
       <h4 itemprop="headline">
         <a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}">{{ post.title }}</a>
-        {% if site.owner.disqus %}
-          <a class="comment-count" href="{{ site.url }}{{ post.url }}#disqus_thread">Comments</a>
-        {% endif %}
       </h4>
       <p itemprop="text">{% if post.description %}{{ post.description }}{% else %}{{ post.content | strip_html | strip_newlines | truncate: 120 }}{% endif %}</p>
     </article>
