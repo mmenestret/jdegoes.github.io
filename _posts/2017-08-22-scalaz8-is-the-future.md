@@ -158,7 +158,7 @@ Welcome to the next-generation of purely functional programming in Scala!
 
 ### Performance
 
-Performance has been at the top of my mind when developing `scalaz.effect`. While the code is still under development and there are more features to add, at this point I can say Scalaz 8's effect system will one of the fastest effect systems on the JVM.
+Performance has been at the top of my mind when developing `scalaz.effect`. While the code is still under development and there are more features to add, at this point I can say Scalaz 8's effect system will be one of the fastest effect systems on the JVM.
 
 The following benchmarks, which are run against the latest versions of Scala's built-in `Future`, Monix' `Task`, and Cats' `IO`, should whet your appetite.
 
