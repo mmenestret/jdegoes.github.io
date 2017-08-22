@@ -22,7 +22,7 @@ These, among other reasons, are why my company, [SlamData](http://slamdata.com) 
 
 The current version of Scalaz 7, while the most feature-complete and widely deployed library for functional programming in Scala, is also showing signs of age. We now know better ways to model some things (like type classes and lenses), and several new abstractions have proven themselves enough to become viable for mainstream use.
 
-Fortunately for commercial Scala developers, Scalaz 8 is under active development, and I'm happy to announce that at the request of several existing contributors, [I've joined the Scalaz 8 development team](https://github.com/orgs/scalaz/teams/team-scalaz/members)!
+Fortunately for commercial Scala developers, Scalaz 8 is under active development, and I'm happy to announce that at the request of several existing contributors, [I've joined the Scalaz 8 development team](https://github.com/orgs/scalaz/people)!
 
 While there's much more work to do before Scalaz 8 is ready for use, I'm *very* excited about its potential. In this post, I'll share a few reasons why you might be, too!
 
