@@ -234,7 +234,7 @@ A unified, batteries-included architecture, a commitment to principled design, a
 Many more Scalaz resources are currently in the works:
 
  * I'm [unveiling Scalaz 8's effect system](http://sched.co/BLvT) at [Scale By The Bay](http://sched.co/BLvT). This is one of only about 2 conferences I speak at each year, so if you're around, don't miss it!
- * [Sam Halliday](http://twitter.com/fommil) is writing a book on functional programming for Scalaz, entitled [Functional Programming for Mere Mortals](https://leanpub.com/fp-scala-mortals). If you're confused by functional programming in Scala or by Scalaz, you'll soon have a fantastic resource to help you become a proficient at FP with the leading Scala FP library.
+ * [Sam Halliday](http://twitter.com/fommil) is writing a book on functional programming for Scalaz, entitled [Functional Programming in Scala for Mortals](https://leanpub.com/fp-scala-mortals). If you're confused by functional programming in Scala or by Scalaz, you'll soon have a fantastic resource to help you become a proficient at FP with the leading Scala FP library.
  * I'll be revamping my popular workshop on *Advanced Functional Programming in Scala*. The new workshop will be titled, *Mastering Functional Programming in Scala with Scalaz 8*, and will help individuals and teams quickly come up to speed on leveraging Scalaz 8 to write robust, performant, real-world software using pure FP.
  * My current plan is to try to get my company's [Matryoshka](http://github.com/slamdata/matryoshka) library folded into Scalaz 8, ensuring that Scalaz has a production-ready package for recursion schemes, which can be tightly integrated into the rest of the standard library (data structures and lenses).
 
