@@ -162,7 +162,7 @@ final case class Async[A](register: (Try[A] => IO[Unit]) => IO[Unit]) { self =>
   final def map[B](ab: A => B): IO[B] = Async[B] { callback =>
     self.register {
       case Left(e) => callback(Left(e))
-      case Right(a) => callback(ab(a))
+      case Right(a) => callback(Right(ab(a)))
     }
   }
   final def flatMap[B](afb: A => IO[B]): IO[B] = Async[B] { callback =>
