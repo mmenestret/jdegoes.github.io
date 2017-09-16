@@ -15,4 +15,4 @@ In addition to my consulting business, I'm currently [CTO at SlamData](http://sl
 
 I've blogged on and off since 2000. Mostly off. This is my most recent attempt, fueled by my desire to write articles in Markdown and publish using Git.
 
-At some point, I should probably put my resume on this page. Until then, you can find something that vaguely resembles a resume on [LinkedIn]({{ site.owner.linkedin }}).
+At some point, I should probably put my resume on this page. Until then, you can find something that vaguely resembles a resume on [LinkedIn](https://www.linkedin.com/in/{{ site.owner.linkedin }}).
