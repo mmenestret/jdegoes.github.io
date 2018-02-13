@@ -168,7 +168,7 @@ final case class Async[A](register: (Try[A] => IO[Unit]) => IO[Unit]) { self =>
   final def flatMap[B](afb: A => Async[B]): Async[B] = Async[B] { callback =>
     self.register {
       case Left(e) => callback(Left(e))
-      case Right(a) => afb(a).flatMap(b => callback(Right(b)))
+      case Right(a) => afb(a).register(callback)
     }
   }
 }
