@@ -1,7 +1,7 @@
 ---
 layout:       post
 title:        "The False Hope of Managing Effects with Tagless-Final in Scala"
-description:  "Using agless-final to manage effects has seen some buy-in in the Scala community, but the benefits are questionable and the drawbacks significant"
+description:  "Using tagless-final to manage effects has seen some buy-in in the Scala community, but the benefits are questionable and the drawbacks significant"
 category:     articles
 tags:         [type classes, haskell, purescript, scala, cats, scalaz, mtl, tagless-final, functional programming, fp]
 ---
