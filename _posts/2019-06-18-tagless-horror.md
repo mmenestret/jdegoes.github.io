@@ -215,7 +215,7 @@ In most cases, overall application costs would be _substantially lower_ picking 
 
 The cost of refactoring from one effect type to another is not related to the cost of changing types from `IO[_]` to `Task[_]`, or swapping one set of methods for another. Rather, it is related to the _semantic_ differences between operations on these effect types. Yet a layer of indirection helps us only when semantic differences are relatively small. If they are small, then the cost of refactoring is relatively low.
 
-A refactoring from one effect type to another only happens needs to happen once, and only if is actually necessary (which it might not be). But the cost of coding to a layer of indirection has to be paid indefinitely, and it must be paid regardless of whether or not the indirection will ever be used.
+A refactoring from one effect type to another only needs to happen once, and only if actually necessary (which it might not be). But the cost of coding to a layer of indirection has to be paid indefinitely, and it must be paid regardless of whether or not the indirection will ever be used.
 
 Beyond the cost of coding to an indirection layer that may never be used, there are substantial _opportunity costs_ to premature indirection. In the case of ZIO, for example, the core effect type has hundreds of additional operations that are not available on a polymorphic `F[_]`. 
 
